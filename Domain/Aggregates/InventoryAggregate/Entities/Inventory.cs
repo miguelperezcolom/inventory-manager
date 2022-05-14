@@ -34,4 +34,8 @@ public class Inventory
         return _items;
     }
 
+    public IList<Item> MarkAsExpired(DateOnly date)
+    {
+        return _items.Where(item => item.MarkAsExpired(date)).ToList();
+    }
 }

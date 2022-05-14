@@ -1,5 +1,6 @@
 using Domain.InventoryAggregate;
 using Domain.Services.Commands;
+using Domain.Services.Events;
 using Domain.Services.Queries;
 
 namespace Domain.Services.Factories;
@@ -8,10 +9,13 @@ public class CommandFactory
 {
 
     private readonly InventoryRepository _inventoryRepository;
+    private readonly IEventBus _eventBus;
 
-    public CommandFactory(InventoryRepository inventoryRepository)
+
+    public CommandFactory(InventoryRepository inventoryRepository, IEventBus eventBus)
     {
         _inventoryRepository = inventoryRepository;
+        _eventBus = eventBus;
     }
 
     public AddItemCommand CreateAddItemCommand(string name, DateOnly expirationDate, ItemType type)
@@ -31,6 +35,10 @@ public class CommandFactory
     
     public RemoveItemCommand CreateRemoveItemCommand(string name)
     {
-        return new RemoveItemCommand(_inventoryRepository, name);
+        return new RemoveItemCommand(_inventoryRepository, _eventBus, name);
+    }
+    public MarkAsExpiredCommand CreateMarkAsExpiredCommand(DateOnly date)
+    {
+        return new MarkAsExpiredCommand(_inventoryRepository, _eventBus, date);
     }
 }

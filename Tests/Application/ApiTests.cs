@@ -24,7 +24,7 @@ public class ApiTests
         var mock = new Mock<ILogger<ItemsAPIController>>();
         ILogger<ItemsAPIController> logger = mock.Object;
         var controller = new ItemsAPIController(logger, new CommandFactory(
-            new InMemoryInventoryRepository()));
+            new InMemoryInventoryRepository(), new SimpleEventBus()));
         var item = new Item()
         {
             Name = "test",
@@ -50,7 +50,7 @@ public class ApiTests
         var mock = new Mock<ILogger<ItemsAPIController>>();
         ILogger<ItemsAPIController> logger = mock.Object;
         var controller = new ItemsAPIController(logger, new CommandFactory(
-            new InMemoryInventoryRepository()));
+            new InMemoryInventoryRepository(), new SimpleEventBus()));
         var item1 = new Item()
         {
             Name = "test1",
@@ -88,7 +88,7 @@ public class ApiTests
         var mock = new Mock<ILogger<ItemsAPIController>>();
         ILogger<ItemsAPIController> logger = mock.Object;
         var controller = new ItemsAPIController(logger, new CommandFactory(
-            new InMemoryInventoryRepository()));
+            new InMemoryInventoryRepository(), new SimpleEventBus()));
         var item = new Item()
         {
             Name = "test",
@@ -115,7 +115,7 @@ public class ApiTests
         var mock = new Mock<ILogger<ItemsAPIController>>();
         ILogger<ItemsAPIController> logger = mock.Object;
         var controller = new ItemsAPIController(logger, new CommandFactory(
-            new InMemoryInventoryRepository()));
+            new InMemoryInventoryRepository(), new SimpleEventBus()));
         var item = new Item()
         {
             Name = "test",
