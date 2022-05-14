@@ -1,3 +1,4 @@
+using Application.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Application.Controllers;
@@ -14,20 +15,18 @@ public class ItemsAPIController : ControllerBase
     }
 
     [HttpPost]
-    public string Add()
+    public void Add(Item item)
     {
-        return "Hola!";
     }
     
     [HttpGet]
-    public string Get()
+    public Item Get()
     {
-        return "Hola!";
+        return new Item();
     }
     
     [HttpDelete]
-    public string Delete()
+    public void Delete(Item item)
     {
-        return "Hola!";
     }
 }
