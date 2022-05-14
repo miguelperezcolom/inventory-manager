@@ -21,6 +21,9 @@ jobs:
         with:
           args: install docfx
 
+      - name: Create Docs dir
+        run: mkdir docs
+        
       - name: DocFX Build
         working-directory: docs
         run: docfx .\docfx.json
