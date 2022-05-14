@@ -1,3 +1,5 @@
+using Domain.Exceptions;
+
 namespace Domain.InventoryAggregate.Entities;
 
 /// <summary>
@@ -24,11 +26,11 @@ public class Inventory
     /// <param name="expirationDate">Item's expiration date</param>
     /// <param name="type">Item's type</param>
     /// <returns>The newly created item</returns>
-    /// <exception cref="Exception">If an item with the same name already exists</exception>
+    /// <exception cref="AlreadyExistsException">If an item with the same name already exists</exception>
     public Item AddItem(string name, DateOnly expirationDate, ItemType type)
     {
         if (_items.Any(i => i.Name.Equals(name))) 
-            throw new Exception("Already exists");
+            throw new AlreadyExistsException();
         var item = new Item(name, expirationDate, type);
         _items.Add(item);
         return item;
