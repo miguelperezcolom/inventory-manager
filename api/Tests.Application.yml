@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Application
+  commentId: N:Tests.Application
+  id: Tests.Application
+  children:
+  - Tests.Application.ApiTests
+  langs:
+  - csharp
+  - vb
+  name: Tests.Application
+  nameWithType: Tests.Application
+  fullName: Tests.Application
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: Tests.Application.ApiTests
+  commentId: T:Tests.Application.ApiTests
+  name: ApiTests
+  nameWithType: ApiTests
+  fullName: Tests.Application.ApiTests

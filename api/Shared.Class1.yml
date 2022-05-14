@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Shared.Class1
+  commentId: T:Shared.Class1
+  id: Class1
+  parent: Shared
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: Class1
+  nameWithType: Class1
+  fullName: Shared.Class1
+  type: Class
+  source:
+    remote:
+      path: Shared/Class1.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Class1
+    path: ../Shared/Class1.cs
+    startLine: 2
+  assemblies:
+  - Shared
+  namespace: Shared
+  syntax:
+    content: 'public class Class1 : object'
+    content.vb: >-
+      Public Class Class1
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: Shared
+  commentId: N:Shared
+  name: Shared
+  nameWithType: Shared
+  fullName: Shared

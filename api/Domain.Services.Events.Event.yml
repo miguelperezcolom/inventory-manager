@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Services.Events.Event
+  commentId: T:Domain.Services.Events.Event
+  id: Event
+  parent: Domain.Services.Events
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: Event
+  nameWithType: Event
+  fullName: Domain.Services.Events.Event
+  type: Class
+  source:
+    remote:
+      path: Domain/Services/Events/Event.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Event
+    path: ../Domain/Services/Events/Event.cs
+    startLine: 2
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Events
+  syntax:
+    content: 'public abstract class Event : object'
+    content.vb: >-
+      Public MustInherit Class Event
+          Inherits Object
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Domain.Services.Events.ItemExpired
+  - Domain.Services.Events.ItemRemoved
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+references:
+- uid: Domain.Services.Events
+  commentId: N:Domain.Services.Events
+  name: Domain.Services.Events
+  nameWithType: Domain.Services.Events
+  fullName: Domain.Services.Events

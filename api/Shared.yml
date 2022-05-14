@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Shared
+  commentId: N:Shared
+  id: Shared
+  children:
+  - Shared.Class1
+  langs:
+  - csharp
+  - vb
+  name: Shared
+  nameWithType: Shared
+  fullName: Shared
+  type: Namespace
+  assemblies:
+  - Shared
+references:
+- uid: Shared.Class1
+  commentId: T:Shared.Class1
+  name: Class1
+  nameWithType: Class1
+  fullName: Shared.Class1

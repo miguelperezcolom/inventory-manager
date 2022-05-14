@@ -1,0 +1,80 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Validators.ItemValidator
+  commentId: T:Application.Validators.ItemValidator
+  id: ItemValidator
+  parent: Application.Validators
+  children:
+  - Application.Validators.ItemValidator.#ctor
+  langs:
+  - csharp
+  - vb
+  name: ItemValidator
+  nameWithType: ItemValidator
+  fullName: Application.Validators.ItemValidator
+  type: Class
+  source:
+    remote:
+      path: Application/Validators/ItemValidator.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: ItemValidator
+    path: ../Application/Validators/ItemValidator.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  syntax:
+    content: 'public class ItemValidator : AbstractValidator<Item>'
+    content.vb: >-
+      Public Class ItemValidator
+          Inherits AbstractValidator(Of Item)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Application.Validators.ItemValidator.#ctor
+  commentId: M:Application.Validators.ItemValidator.#ctor
+  id: '#ctor'
+  parent: Application.Validators.ItemValidator
+  langs:
+  - csharp
+  - vb
+  name: ItemValidator()
+  nameWithType: ItemValidator.ItemValidator()
+  fullName: Application.Validators.ItemValidator.ItemValidator()
+  type: Constructor
+  source:
+    remote:
+      path: Application/Validators/ItemValidator.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: .ctor
+    path: ../Application/Validators/ItemValidator.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  syntax:
+    content: public ItemValidator()
+    content.vb: Public Sub New
+  overload: Application.Validators.ItemValidator.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Application.Validators
+  commentId: N:Application.Validators
+  name: Application.Validators
+  nameWithType: Application.Validators
+  fullName: Application.Validators
+- uid: Application.Validators.ItemValidator.#ctor*
+  commentId: Overload:Application.Validators.ItemValidator.#ctor
+  name: ItemValidator
+  nameWithType: ItemValidator.ItemValidator
+  fullName: Application.Validators.ItemValidator.ItemValidator

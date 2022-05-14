@@ -1,0 +1,396 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Services.Factories.CommandFactory
+  commentId: T:Domain.Services.Factories.CommandFactory
+  id: CommandFactory
+  parent: Domain.Services.Factories
+  children:
+  - Domain.Services.Factories.CommandFactory.#ctor(Domain.InventoryAggregate.IInventoryRepository,Domain.Services.Events.IEventBus)
+  - Domain.Services.Factories.CommandFactory.CreateAddItemCommand(System.String,DateOnly,Domain.InventoryAggregate.ItemType)
+  - Domain.Services.Factories.CommandFactory.CreateGetItemQuery(System.String)
+  - Domain.Services.Factories.CommandFactory.CreateGetItemsQuery
+  - Domain.Services.Factories.CommandFactory.CreateMarkAsExpiredCommand(DateOnly)
+  - Domain.Services.Factories.CommandFactory.CreateRemoveItemCommand(System.String)
+  langs:
+  - csharp
+  - vb
+  name: CommandFactory
+  nameWithType: CommandFactory
+  fullName: Domain.Services.Factories.CommandFactory
+  type: Class
+  source:
+    remote:
+      path: Domain/Services/Factories/CommandFactory.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: CommandFactory
+    path: ../Domain/Services/Factories/CommandFactory.cs
+    startLine: 10
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Factories
+  summary: "\nFactory for commands and queries\n"
+  example: []
+  syntax:
+    content: 'public class CommandFactory : object'
+    content.vb: >-
+      Public Class CommandFactory
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Domain.Services.Factories.CommandFactory.#ctor(Domain.InventoryAggregate.IInventoryRepository,Domain.Services.Events.IEventBus)
+  commentId: M:Domain.Services.Factories.CommandFactory.#ctor(Domain.InventoryAggregate.IInventoryRepository,Domain.Services.Events.IEventBus)
+  id: '#ctor(Domain.InventoryAggregate.IInventoryRepository,Domain.Services.Events.IEventBus)'
+  parent: Domain.Services.Factories.CommandFactory
+  langs:
+  - csharp
+  - vb
+  name: CommandFactory(IInventoryRepository, IEventBus)
+  nameWithType: CommandFactory.CommandFactory(IInventoryRepository, IEventBus)
+  fullName: Domain.Services.Factories.CommandFactory.CommandFactory(Domain.InventoryAggregate.IInventoryRepository, Domain.Services.Events.IEventBus)
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Services/Factories/CommandFactory.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: .ctor
+    path: ../Domain/Services/Factories/CommandFactory.cs
+    startLine: 22
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Factories
+  summary: "\nConstructor for the command factory\n"
+  example: []
+  syntax:
+    content: public CommandFactory(IInventoryRepository inventoryRepository, IEventBus eventBus)
+    parameters:
+    - id: inventoryRepository
+      type: Domain.InventoryAggregate.IInventoryRepository
+      description: The inventory repository
+    - id: eventBus
+      type: Domain.Services.Events.IEventBus
+      description: The event bus
+    content.vb: Public Sub New(inventoryRepository As IInventoryRepository, eventBus As IEventBus)
+  overload: Domain.Services.Factories.CommandFactory.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Domain.Services.Factories.CommandFactory.CreateAddItemCommand(System.String,DateOnly,Domain.InventoryAggregate.ItemType)
+  commentId: M:Domain.Services.Factories.CommandFactory.CreateAddItemCommand(System.String,DateOnly,Domain.InventoryAggregate.ItemType)
+  id: CreateAddItemCommand(System.String,DateOnly,Domain.InventoryAggregate.ItemType)
+  parent: Domain.Services.Factories.CommandFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateAddItemCommand(String, DateOnly, ItemType)
+  nameWithType: CommandFactory.CreateAddItemCommand(String, DateOnly, ItemType)
+  fullName: Domain.Services.Factories.CommandFactory.CreateAddItemCommand(System.String, DateOnly, Domain.InventoryAggregate.ItemType)
+  type: Method
+  source:
+    remote:
+      path: Domain/Services/Factories/CommandFactory.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: CreateAddItemCommand
+    path: ../Domain/Services/Factories/CommandFactory.cs
+    startLine: 35
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Factories
+  summary: "\nCreate an add item command\n"
+  example: []
+  syntax:
+    content: public AddItemCommand CreateAddItemCommand(string name, DateOnly expirationDate, ItemType type)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the new item
+    - id: expirationDate
+      type: DateOnly
+      description: The expiration date for the new item
+    - id: type
+      type: Domain.InventoryAggregate.ItemType
+      description: The type of the new item
+    return:
+      type: Domain.Services.Commands.AddItemCommand
+      description: The command
+    content.vb: Public Function CreateAddItemCommand(name As String, expirationDate As DateOnly, type As ItemType) As AddItemCommand
+  overload: Domain.Services.Factories.CommandFactory.CreateAddItemCommand*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Domain.Services.Factories.CommandFactory.CreateGetItemsQuery
+  commentId: M:Domain.Services.Factories.CommandFactory.CreateGetItemsQuery
+  id: CreateGetItemsQuery
+  parent: Domain.Services.Factories.CommandFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateGetItemsQuery()
+  nameWithType: CommandFactory.CreateGetItemsQuery()
+  fullName: Domain.Services.Factories.CommandFactory.CreateGetItemsQuery()
+  type: Method
+  source:
+    remote:
+      path: Domain/Services/Factories/CommandFactory.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: CreateGetItemsQuery
+    path: ../Domain/Services/Factories/CommandFactory.cs
+    startLine: 44
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Factories
+  summary: "\nCreate a get items query\n"
+  example: []
+  syntax:
+    content: public GetItemsQuery CreateGetItemsQuery()
+    return:
+      type: Domain.Services.Queries.GetItemsQuery
+      description: The query
+    content.vb: Public Function CreateGetItemsQuery As GetItemsQuery
+  overload: Domain.Services.Factories.CommandFactory.CreateGetItemsQuery*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Domain.Services.Factories.CommandFactory.CreateGetItemQuery(System.String)
+  commentId: M:Domain.Services.Factories.CommandFactory.CreateGetItemQuery(System.String)
+  id: CreateGetItemQuery(System.String)
+  parent: Domain.Services.Factories.CommandFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateGetItemQuery(String)
+  nameWithType: CommandFactory.CreateGetItemQuery(String)
+  fullName: Domain.Services.Factories.CommandFactory.CreateGetItemQuery(System.String)
+  type: Method
+  source:
+    remote:
+      path: Domain/Services/Factories/CommandFactory.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: CreateGetItemQuery
+    path: ../Domain/Services/Factories/CommandFactory.cs
+    startLine: 54
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Factories
+  summary: "\ncreate a get item query\n"
+  example: []
+  syntax:
+    content: public GetItemQuery CreateGetItemQuery(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the item
+    return:
+      type: Domain.Services.Queries.GetItemQuery
+      description: The query
+    content.vb: Public Function CreateGetItemQuery(name As String) As GetItemQuery
+  overload: Domain.Services.Factories.CommandFactory.CreateGetItemQuery*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Domain.Services.Factories.CommandFactory.CreateRemoveItemCommand(System.String)
+  commentId: M:Domain.Services.Factories.CommandFactory.CreateRemoveItemCommand(System.String)
+  id: CreateRemoveItemCommand(System.String)
+  parent: Domain.Services.Factories.CommandFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateRemoveItemCommand(String)
+  nameWithType: CommandFactory.CreateRemoveItemCommand(String)
+  fullName: Domain.Services.Factories.CommandFactory.CreateRemoveItemCommand(System.String)
+  type: Method
+  source:
+    remote:
+      path: Domain/Services/Factories/CommandFactory.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: CreateRemoveItemCommand
+    path: ../Domain/Services/Factories/CommandFactory.cs
+    startLine: 64
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Factories
+  summary: "\nCreate a remove item command\n"
+  example: []
+  syntax:
+    content: public RemoveItemCommand CreateRemoveItemCommand(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the item
+    return:
+      type: Domain.Services.Commands.RemoveItemCommand
+      description: The command
+    content.vb: Public Function CreateRemoveItemCommand(name As String) As RemoveItemCommand
+  overload: Domain.Services.Factories.CommandFactory.CreateRemoveItemCommand*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Domain.Services.Factories.CommandFactory.CreateMarkAsExpiredCommand(DateOnly)
+  commentId: M:Domain.Services.Factories.CommandFactory.CreateMarkAsExpiredCommand(DateOnly)
+  id: CreateMarkAsExpiredCommand(DateOnly)
+  parent: Domain.Services.Factories.CommandFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateMarkAsExpiredCommand(DateOnly)
+  nameWithType: CommandFactory.CreateMarkAsExpiredCommand(DateOnly)
+  fullName: Domain.Services.Factories.CommandFactory.CreateMarkAsExpiredCommand(DateOnly)
+  type: Method
+  source:
+    remote:
+      path: Domain/Services/Factories/CommandFactory.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: CreateMarkAsExpiredCommand
+    path: ../Domain/Services/Factories/CommandFactory.cs
+    startLine: 74
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Factories
+  summary: "\nCreate a mark as expired command\n"
+  example: []
+  syntax:
+    content: public MarkAsExpiredCommand CreateMarkAsExpiredCommand(DateOnly date)
+    parameters:
+    - id: date
+      type: DateOnly
+      description: The date to compare with
+    return:
+      type: Domain.Services.Commands.MarkAsExpiredCommand
+      description: The command
+    content.vb: Public Function CreateMarkAsExpiredCommand(date As DateOnly) As MarkAsExpiredCommand
+  overload: Domain.Services.Factories.CommandFactory.CreateMarkAsExpiredCommand*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Domain.Services.Factories
+  commentId: N:Domain.Services.Factories
+  name: Domain.Services.Factories
+  nameWithType: Domain.Services.Factories
+  fullName: Domain.Services.Factories
+- uid: Domain.Services.Factories.CommandFactory.#ctor*
+  commentId: Overload:Domain.Services.Factories.CommandFactory.#ctor
+  name: CommandFactory
+  nameWithType: CommandFactory.CommandFactory
+  fullName: Domain.Services.Factories.CommandFactory.CommandFactory
+- uid: Domain.InventoryAggregate.IInventoryRepository
+  commentId: T:Domain.InventoryAggregate.IInventoryRepository
+  parent: Domain.InventoryAggregate
+  name: IInventoryRepository
+  nameWithType: IInventoryRepository
+  fullName: Domain.InventoryAggregate.IInventoryRepository
+- uid: Domain.Services.Events.IEventBus
+  commentId: T:Domain.Services.Events.IEventBus
+  parent: Domain.Services.Events
+  name: IEventBus
+  nameWithType: IEventBus
+  fullName: Domain.Services.Events.IEventBus
+- uid: Domain.InventoryAggregate
+  commentId: N:Domain.InventoryAggregate
+  name: Domain.InventoryAggregate
+  nameWithType: Domain.InventoryAggregate
+  fullName: Domain.InventoryAggregate
+- uid: Domain.Services.Events
+  commentId: N:Domain.Services.Events
+  name: Domain.Services.Events
+  nameWithType: Domain.Services.Events
+  fullName: Domain.Services.Events
+- uid: Domain.Services.Factories.CommandFactory.CreateAddItemCommand*
+  commentId: Overload:Domain.Services.Factories.CommandFactory.CreateAddItemCommand
+  name: CreateAddItemCommand
+  nameWithType: CommandFactory.CreateAddItemCommand
+  fullName: Domain.Services.Factories.CommandFactory.CreateAddItemCommand
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DateOnly
+  isExternal: true
+  name: DateOnly
+  nameWithType: DateOnly
+  fullName: DateOnly
+- uid: Domain.InventoryAggregate.ItemType
+  commentId: T:Domain.InventoryAggregate.ItemType
+  parent: Domain.InventoryAggregate
+  name: ItemType
+  nameWithType: ItemType
+  fullName: Domain.InventoryAggregate.ItemType
+- uid: Domain.Services.Commands.AddItemCommand
+  commentId: T:Domain.Services.Commands.AddItemCommand
+  parent: Domain.Services.Commands
+  name: AddItemCommand
+  nameWithType: AddItemCommand
+  fullName: Domain.Services.Commands.AddItemCommand
+- uid: Domain.Services.Commands
+  commentId: N:Domain.Services.Commands
+  name: Domain.Services.Commands
+  nameWithType: Domain.Services.Commands
+  fullName: Domain.Services.Commands
+- uid: Domain.Services.Factories.CommandFactory.CreateGetItemsQuery*
+  commentId: Overload:Domain.Services.Factories.CommandFactory.CreateGetItemsQuery
+  name: CreateGetItemsQuery
+  nameWithType: CommandFactory.CreateGetItemsQuery
+  fullName: Domain.Services.Factories.CommandFactory.CreateGetItemsQuery
+- uid: Domain.Services.Queries.GetItemsQuery
+  commentId: T:Domain.Services.Queries.GetItemsQuery
+  parent: Domain.Services.Queries
+  name: GetItemsQuery
+  nameWithType: GetItemsQuery
+  fullName: Domain.Services.Queries.GetItemsQuery
+- uid: Domain.Services.Queries
+  commentId: N:Domain.Services.Queries
+  name: Domain.Services.Queries
+  nameWithType: Domain.Services.Queries
+  fullName: Domain.Services.Queries
+- uid: Domain.Services.Factories.CommandFactory.CreateGetItemQuery*
+  commentId: Overload:Domain.Services.Factories.CommandFactory.CreateGetItemQuery
+  name: CreateGetItemQuery
+  nameWithType: CommandFactory.CreateGetItemQuery
+  fullName: Domain.Services.Factories.CommandFactory.CreateGetItemQuery
+- uid: Domain.Services.Queries.GetItemQuery
+  commentId: T:Domain.Services.Queries.GetItemQuery
+  parent: Domain.Services.Queries
+  name: GetItemQuery
+  nameWithType: GetItemQuery
+  fullName: Domain.Services.Queries.GetItemQuery
+- uid: Domain.Services.Factories.CommandFactory.CreateRemoveItemCommand*
+  commentId: Overload:Domain.Services.Factories.CommandFactory.CreateRemoveItemCommand
+  name: CreateRemoveItemCommand
+  nameWithType: CommandFactory.CreateRemoveItemCommand
+  fullName: Domain.Services.Factories.CommandFactory.CreateRemoveItemCommand
+- uid: Domain.Services.Commands.RemoveItemCommand
+  commentId: T:Domain.Services.Commands.RemoveItemCommand
+  parent: Domain.Services.Commands
+  name: RemoveItemCommand
+  nameWithType: RemoveItemCommand
+  fullName: Domain.Services.Commands.RemoveItemCommand
+- uid: Domain.Services.Factories.CommandFactory.CreateMarkAsExpiredCommand*
+  commentId: Overload:Domain.Services.Factories.CommandFactory.CreateMarkAsExpiredCommand
+  name: CreateMarkAsExpiredCommand
+  nameWithType: CommandFactory.CreateMarkAsExpiredCommand
+  fullName: Domain.Services.Factories.CommandFactory.CreateMarkAsExpiredCommand
+- uid: Domain.Services.Commands.MarkAsExpiredCommand
+  commentId: T:Domain.Services.Commands.MarkAsExpiredCommand
+  parent: Domain.Services.Commands
+  name: MarkAsExpiredCommand
+  nameWithType: MarkAsExpiredCommand
+  fullName: Domain.Services.Commands.MarkAsExpiredCommand

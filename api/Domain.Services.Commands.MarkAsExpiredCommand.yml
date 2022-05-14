@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Services.Commands.MarkAsExpiredCommand
+  commentId: T:Domain.Services.Commands.MarkAsExpiredCommand
+  id: MarkAsExpiredCommand
+  parent: Domain.Services.Commands
+  children:
+  - Domain.Services.Commands.MarkAsExpiredCommand.#ctor(Domain.InventoryAggregate.IInventoryRepository,Domain.Services.Events.IEventBus,DateOnly)
+  - Domain.Services.Commands.MarkAsExpiredCommand.RunAsync
+  langs:
+  - csharp
+  - vb
+  name: MarkAsExpiredCommand
+  nameWithType: MarkAsExpiredCommand
+  fullName: Domain.Services.Commands.MarkAsExpiredCommand
+  type: Class
+  source:
+    remote:
+      path: Domain/Services/Commands/MarkAsExpiredCommand.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: MarkAsExpiredCommand
+    path: ../Domain/Services/Commands/MarkAsExpiredCommand.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Commands
+  syntax:
+    content: 'public class MarkAsExpiredCommand : object'
+    content.vb: >-
+      Public Class MarkAsExpiredCommand
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Domain.Services.Commands.MarkAsExpiredCommand.#ctor(Domain.InventoryAggregate.IInventoryRepository,Domain.Services.Events.IEventBus,DateOnly)
+  commentId: M:Domain.Services.Commands.MarkAsExpiredCommand.#ctor(Domain.InventoryAggregate.IInventoryRepository,Domain.Services.Events.IEventBus,DateOnly)
+  id: '#ctor(Domain.InventoryAggregate.IInventoryRepository,Domain.Services.Events.IEventBus,DateOnly)'
+  parent: Domain.Services.Commands.MarkAsExpiredCommand
+  langs:
+  - csharp
+  - vb
+  name: MarkAsExpiredCommand(IInventoryRepository, IEventBus, DateOnly)
+  nameWithType: MarkAsExpiredCommand.MarkAsExpiredCommand(IInventoryRepository, IEventBus, DateOnly)
+  fullName: Domain.Services.Commands.MarkAsExpiredCommand.MarkAsExpiredCommand(Domain.InventoryAggregate.IInventoryRepository, Domain.Services.Events.IEventBus, DateOnly)
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Services/Commands/MarkAsExpiredCommand.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: .ctor
+    path: ../Domain/Services/Commands/MarkAsExpiredCommand.cs
+    startLine: 12
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Commands
+  syntax:
+    content: public MarkAsExpiredCommand(IInventoryRepository inventoryRepository, IEventBus eventBus, DateOnly date)
+    parameters:
+    - id: inventoryRepository
+      type: Domain.InventoryAggregate.IInventoryRepository
+    - id: eventBus
+      type: Domain.Services.Events.IEventBus
+    - id: date
+      type: DateOnly
+    content.vb: Public Sub New(inventoryRepository As IInventoryRepository, eventBus As IEventBus, date As DateOnly)
+  overload: Domain.Services.Commands.MarkAsExpiredCommand.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Domain.Services.Commands.MarkAsExpiredCommand.RunAsync
+  commentId: M:Domain.Services.Commands.MarkAsExpiredCommand.RunAsync
+  id: RunAsync
+  parent: Domain.Services.Commands.MarkAsExpiredCommand
+  langs:
+  - csharp
+  - vb
+  name: RunAsync()
+  nameWithType: MarkAsExpiredCommand.RunAsync()
+  fullName: Domain.Services.Commands.MarkAsExpiredCommand.RunAsync()
+  type: Method
+  source:
+    remote:
+      path: Domain/Services/Commands/MarkAsExpiredCommand.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: RunAsync
+    path: ../Domain/Services/Commands/MarkAsExpiredCommand.cs
+    startLine: 19
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Commands
+  syntax:
+    content: public async Task RunAsync()
+    return:
+      type: Task
+    content.vb: Public Function RunAsync As Task
+  overload: Domain.Services.Commands.MarkAsExpiredCommand.RunAsync*
+  modifiers.csharp:
+  - public
+  - async
+  modifiers.vb:
+  - Public
+references:
+- uid: Domain.Services.Commands
+  commentId: N:Domain.Services.Commands
+  name: Domain.Services.Commands
+  nameWithType: Domain.Services.Commands
+  fullName: Domain.Services.Commands
+- uid: Domain.Services.Commands.MarkAsExpiredCommand.#ctor*
+  commentId: Overload:Domain.Services.Commands.MarkAsExpiredCommand.#ctor
+  name: MarkAsExpiredCommand
+  nameWithType: MarkAsExpiredCommand.MarkAsExpiredCommand
+  fullName: Domain.Services.Commands.MarkAsExpiredCommand.MarkAsExpiredCommand
+- uid: Domain.InventoryAggregate.IInventoryRepository
+  commentId: T:Domain.InventoryAggregate.IInventoryRepository
+  parent: Domain.InventoryAggregate
+  name: IInventoryRepository
+  nameWithType: IInventoryRepository
+  fullName: Domain.InventoryAggregate.IInventoryRepository
+- uid: Domain.Services.Events.IEventBus
+  commentId: T:Domain.Services.Events.IEventBus
+  parent: Domain.Services.Events
+  name: IEventBus
+  nameWithType: IEventBus
+  fullName: Domain.Services.Events.IEventBus
+- uid: DateOnly
+  isExternal: true
+  name: DateOnly
+  nameWithType: DateOnly
+  fullName: DateOnly
+- uid: Domain.InventoryAggregate
+  commentId: N:Domain.InventoryAggregate
+  name: Domain.InventoryAggregate
+  nameWithType: Domain.InventoryAggregate
+  fullName: Domain.InventoryAggregate
+- uid: Domain.Services.Events
+  commentId: N:Domain.Services.Events
+  name: Domain.Services.Events
+  nameWithType: Domain.Services.Events
+  fullName: Domain.Services.Events
+- uid: Domain.Services.Commands.MarkAsExpiredCommand.RunAsync*
+  commentId: Overload:Domain.Services.Commands.MarkAsExpiredCommand.RunAsync
+  name: RunAsync
+  nameWithType: MarkAsExpiredCommand.RunAsync
+  fullName: Domain.Services.Commands.MarkAsExpiredCommand.RunAsync
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

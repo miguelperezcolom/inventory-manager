@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure
+  commentId: N:Infrastructure
+  id: Infrastructure
+  children:
+  - Infrastructure.InMemoryInventoryRepository
+  - Infrastructure.SimpleEventBus
+  langs:
+  - csharp
+  - vb
+  name: Infrastructure
+  nameWithType: Infrastructure
+  fullName: Infrastructure
+  type: Namespace
+  assemblies:
+  - Infrastructure
+references:
+- uid: Infrastructure.InMemoryInventoryRepository
+  commentId: T:Infrastructure.InMemoryInventoryRepository
+  name: InMemoryInventoryRepository
+  nameWithType: InMemoryInventoryRepository
+  fullName: Infrastructure.InMemoryInventoryRepository
+- uid: Infrastructure.SimpleEventBus
+  commentId: T:Infrastructure.SimpleEventBus
+  name: SimpleEventBus
+  nameWithType: SimpleEventBus
+  fullName: Infrastructure.SimpleEventBus

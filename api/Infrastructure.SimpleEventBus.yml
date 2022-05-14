@@ -1,0 +1,146 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.SimpleEventBus
+  commentId: T:Infrastructure.SimpleEventBus
+  id: SimpleEventBus
+  parent: Infrastructure
+  children:
+  - Infrastructure.SimpleEventBus.Publish(Domain.Services.Events.Event)
+  langs:
+  - csharp
+  - vb
+  name: SimpleEventBus
+  nameWithType: SimpleEventBus
+  fullName: Infrastructure.SimpleEventBus
+  type: Class
+  source:
+    remote:
+      path: Infrastructure/SimpleEventBus.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: SimpleEventBus
+    path: ../Infrastructure/SimpleEventBus.cs
+    startLine: 7
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure
+  summary: "\nSimple implementation of the event bus\n"
+  example: []
+  syntax:
+    content: 'public class SimpleEventBus : object, IEventBus'
+    content.vb: >-
+      Public Class SimpleEventBus
+          Inherits Object
+          Implements IEventBus
+  inheritance:
+  - System.Object
+  implements:
+  - Domain.Services.Events.IEventBus
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Infrastructure.SimpleEventBus.Publish(Domain.Services.Events.Event)
+  commentId: M:Infrastructure.SimpleEventBus.Publish(Domain.Services.Events.Event)
+  id: Publish(Domain.Services.Events.Event)
+  parent: Infrastructure.SimpleEventBus
+  langs:
+  - csharp
+  - vb
+  name: Publish(Event)
+  nameWithType: SimpleEventBus.Publish(Event)
+  fullName: Infrastructure.SimpleEventBus.Publish(Domain.Services.Events.Event)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/SimpleEventBus.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Publish
+    path: ../Infrastructure/SimpleEventBus.cs
+    startLine: 13
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure
+  summary: "\nPublish an event\n"
+  example: []
+  syntax:
+    content: public void Publish(Event anEvent)
+    parameters:
+    - id: anEvent
+      type: Domain.Services.Events.Event
+      description: The event to be published
+    content.vb: Public Sub Publish(anEvent As  Event)
+  overload: Infrastructure.SimpleEventBus.Publish*
+  implements:
+  - Domain.Services.Events.IEventBus.Publish(Domain.Services.Events.Event)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Infrastructure
+  commentId: N:Infrastructure
+  name: Infrastructure
+  nameWithType: Infrastructure
+  fullName: Infrastructure
+- uid: Domain.Services.Events.IEventBus
+  commentId: T:Domain.Services.Events.IEventBus
+  parent: Domain.Services.Events
+  name: IEventBus
+  nameWithType: IEventBus
+  fullName: Domain.Services.Events.IEventBus
+- uid: Domain.Services.Events
+  commentId: N:Domain.Services.Events
+  name: Domain.Services.Events
+  nameWithType: Domain.Services.Events
+  fullName: Domain.Services.Events
+- uid: Infrastructure.SimpleEventBus.Publish*
+  commentId: Overload:Infrastructure.SimpleEventBus.Publish
+  name: Publish
+  nameWithType: SimpleEventBus.Publish
+  fullName: Infrastructure.SimpleEventBus.Publish
+- uid: Domain.Services.Events.IEventBus.Publish(Domain.Services.Events.Event)
+  commentId: M:Domain.Services.Events.IEventBus.Publish(Domain.Services.Events.Event)
+  parent: Domain.Services.Events.IEventBus
+  name: Publish(Event)
+  nameWithType: IEventBus.Publish(Event)
+  fullName: Domain.Services.Events.IEventBus.Publish(Domain.Services.Events.Event)
+  spec.csharp:
+  - uid: Domain.Services.Events.IEventBus.Publish(Domain.Services.Events.Event)
+    name: Publish
+    nameWithType: IEventBus.Publish
+    fullName: Domain.Services.Events.IEventBus.Publish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Domain.Services.Events.Event
+    name: Event
+    nameWithType: Event
+    fullName: Domain.Services.Events.Event
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Domain.Services.Events.IEventBus.Publish(Domain.Services.Events.Event)
+    name: Publish
+    nameWithType: IEventBus.Publish
+    fullName: Domain.Services.Events.IEventBus.Publish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Domain.Services.Events.Event
+    name: Event
+    nameWithType: Event
+    fullName: Domain.Services.Events.Event
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Domain.Services.Events.Event
+  commentId: T:Domain.Services.Events.Event
+  parent: Domain.Services.Events
+  name: Event
+  nameWithType: Event
+  fullName: Domain.Services.Events.Event

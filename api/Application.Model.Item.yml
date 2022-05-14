@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Model.Item
+  commentId: T:Application.Model.Item
+  id: Item
+  parent: Application.Model
+  children:
+  - Application.Model.Item.ExpirationDate
+  - Application.Model.Item.Name
+  - Application.Model.Item.Type
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: Item
+  fullName: Application.Model.Item
+  type: Class
+  source:
+    remote:
+      path: Application/Model/Item.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Item
+    path: ../Application/Model/Item.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Model
+  syntax:
+    content: 'public class Item : object'
+    content.vb: >-
+      Public Class Item
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Application.Model.Item.Name
+  commentId: P:Application.Model.Item.Name
+  id: Name
+  parent: Application.Model.Item
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Item.Name
+  fullName: Application.Model.Item.Name
+  type: Property
+  source:
+    remote:
+      path: Application/Model/Item.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Name
+    path: ../Application/Model/Item.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Model
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Application.Model.Item.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Application.Model.Item.ExpirationDate
+  commentId: P:Application.Model.Item.ExpirationDate
+  id: ExpirationDate
+  parent: Application.Model.Item
+  langs:
+  - csharp
+  - vb
+  name: ExpirationDate
+  nameWithType: Item.ExpirationDate
+  fullName: Application.Model.Item.ExpirationDate
+  type: Property
+  source:
+    remote:
+      path: Application/Model/Item.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: ExpirationDate
+    path: ../Application/Model/Item.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Model
+  syntax:
+    content: public DateOnly ExpirationDate { get; set; }
+    parameters: []
+    return:
+      type: DateOnly
+    content.vb: Public Property ExpirationDate As DateOnly
+  overload: Application.Model.Item.ExpirationDate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Application.Model.Item.Type
+  commentId: P:Application.Model.Item.Type
+  id: Type
+  parent: Application.Model.Item
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Item.Type
+  fullName: Application.Model.Item.Type
+  type: Property
+  source:
+    remote:
+      path: Application/Model/Item.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Type
+    path: ../Application/Model/Item.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Model
+  syntax:
+    content: public ItemType Type { get; set; }
+    parameters: []
+    return:
+      type: Domain.InventoryAggregate.ItemType
+    content.vb: Public Property Type As ItemType
+  overload: Application.Model.Item.Type*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Application.Model
+  commentId: N:Application.Model
+  name: Application.Model
+  nameWithType: Application.Model
+  fullName: Application.Model
+- uid: Application.Model.Item.Name*
+  commentId: Overload:Application.Model.Item.Name
+  name: Name
+  nameWithType: Item.Name
+  fullName: Application.Model.Item.Name
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Application.Model.Item.ExpirationDate*
+  commentId: Overload:Application.Model.Item.ExpirationDate
+  name: ExpirationDate
+  nameWithType: Item.ExpirationDate
+  fullName: Application.Model.Item.ExpirationDate
+- uid: DateOnly
+  isExternal: true
+  name: DateOnly
+  nameWithType: DateOnly
+  fullName: DateOnly
+- uid: Application.Model.Item.Type*
+  commentId: Overload:Application.Model.Item.Type
+  name: Type
+  nameWithType: Item.Type
+  fullName: Application.Model.Item.Type
+- uid: Domain.InventoryAggregate.ItemType
+  commentId: T:Domain.InventoryAggregate.ItemType
+  parent: Domain.InventoryAggregate
+  name: ItemType
+  nameWithType: ItemType
+  fullName: Domain.InventoryAggregate.ItemType
+- uid: Domain.InventoryAggregate
+  commentId: N:Domain.InventoryAggregate
+  name: Domain.InventoryAggregate
+  nameWithType: Domain.InventoryAggregate
+  fullName: Domain.InventoryAggregate

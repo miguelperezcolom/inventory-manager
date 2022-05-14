@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.UnitTest1
+  commentId: T:Tests.UnitTest1
+  id: UnitTest1
+  parent: Tests
+  children:
+  - Tests.UnitTest1.repo_add_item_item_added
+  - Tests.UnitTest1.repo_remove_item_item_removed
+  langs:
+  - csharp
+  - vb
+  name: UnitTest1
+  nameWithType: UnitTest1
+  fullName: Tests.UnitTest1
+  type: Class
+  source:
+    remote:
+      path: Tests/Domain/RepoTests.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: UnitTest1
+    path: ../Tests/Domain/RepoTests.cs
+    startLine: 8
+  assemblies:
+  - Tests
+  namespace: Tests
+  syntax:
+    content: 'public class UnitTest1 : object'
+    content.vb: >-
+      Public Class UnitTest1
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Tests.UnitTest1.repo_add_item_item_added
+  commentId: M:Tests.UnitTest1.repo_add_item_item_added
+  id: repo_add_item_item_added
+  parent: Tests.UnitTest1
+  langs:
+  - csharp
+  - vb
+  name: repo_add_item_item_added()
+  nameWithType: UnitTest1.repo_add_item_item_added()
+  fullName: Tests.UnitTest1.repo_add_item_item_added()
+  type: Method
+  source:
+    remote:
+      path: Tests/Domain/RepoTests.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: repo_add_item_item_added
+    path: ../Tests/Domain/RepoTests.cs
+    startLine: 10
+  assemblies:
+  - Tests
+  namespace: Tests
+  syntax:
+    content: public void repo_add_item_item_added()
+    content.vb: Public Sub repo_add_item_item_added
+  overload: Tests.UnitTest1.repo_add_item_item_added*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Tests.UnitTest1.repo_remove_item_item_removed
+  commentId: M:Tests.UnitTest1.repo_remove_item_item_removed
+  id: repo_remove_item_item_removed
+  parent: Tests.UnitTest1
+  langs:
+  - csharp
+  - vb
+  name: repo_remove_item_item_removed()
+  nameWithType: UnitTest1.repo_remove_item_item_removed()
+  fullName: Tests.UnitTest1.repo_remove_item_item_removed()
+  type: Method
+  source:
+    remote:
+      path: Tests/Domain/RepoTests.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: repo_remove_item_item_removed
+    path: ../Tests/Domain/RepoTests.cs
+    startLine: 33
+  assemblies:
+  - Tests
+  namespace: Tests
+  syntax:
+    content: public void repo_remove_item_item_removed()
+    content.vb: Public Sub repo_remove_item_item_removed
+  overload: Tests.UnitTest1.repo_remove_item_item_removed*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Tests
+  commentId: N:Tests
+  name: Tests
+  nameWithType: Tests
+  fullName: Tests
+- uid: Tests.UnitTest1.repo_add_item_item_added*
+  commentId: Overload:Tests.UnitTest1.repo_add_item_item_added
+  name: repo_add_item_item_added
+  nameWithType: UnitTest1.repo_add_item_item_added
+  fullName: Tests.UnitTest1.repo_add_item_item_added
+- uid: Tests.UnitTest1.repo_remove_item_item_removed*
+  commentId: Overload:Tests.UnitTest1.repo_remove_item_item_removed
+  name: repo_remove_item_item_removed
+  nameWithType: UnitTest1.repo_remove_item_item_removed
+  fullName: Tests.UnitTest1.repo_remove_item_item_removed

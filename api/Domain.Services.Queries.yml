@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Services.Queries
+  commentId: N:Domain.Services.Queries
+  id: Domain.Services.Queries
+  children:
+  - Domain.Services.Queries.GetItemQuery
+  - Domain.Services.Queries.GetItemsQuery
+  langs:
+  - csharp
+  - vb
+  name: Domain.Services.Queries
+  nameWithType: Domain.Services.Queries
+  fullName: Domain.Services.Queries
+  type: Namespace
+  assemblies:
+  - Domain
+references:
+- uid: Domain.Services.Queries.GetItemQuery
+  commentId: T:Domain.Services.Queries.GetItemQuery
+  parent: Domain.Services.Queries
+  name: GetItemQuery
+  nameWithType: GetItemQuery
+  fullName: Domain.Services.Queries.GetItemQuery
+- uid: Domain.Services.Queries.GetItemsQuery
+  commentId: T:Domain.Services.Queries.GetItemsQuery
+  parent: Domain.Services.Queries
+  name: GetItemsQuery
+  nameWithType: GetItemsQuery
+  fullName: Domain.Services.Queries.GetItemsQuery
+- uid: Domain.Services.Queries
+  commentId: N:Domain.Services.Queries
+  name: Domain.Services.Queries
+  nameWithType: Domain.Services.Queries
+  fullName: Domain.Services.Queries

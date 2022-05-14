@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Exceptions.AlreadyExistsException
+  commentId: T:Domain.Exceptions.AlreadyExistsException
+  id: AlreadyExistsException
+  parent: Domain.Exceptions
+  children:
+  - Domain.Exceptions.AlreadyExistsException.#ctor
+  - Domain.Exceptions.AlreadyExistsException.#ctor(SerializationInfo,StreamingContext)
+  langs:
+  - csharp
+  - vb
+  name: AlreadyExistsException
+  nameWithType: AlreadyExistsException
+  fullName: Domain.Exceptions.AlreadyExistsException
+  type: Class
+  source:
+    remote:
+      path: Domain/Exceptions/AlreadyExistsException.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: AlreadyExistsException
+    path: ../Domain/Exceptions/AlreadyExistsException.cs
+    startLine: 7
+  assemblies:
+  - Domain
+  namespace: Domain.Exceptions
+  summary: "\nException which raises when we try to add an already existing item\n"
+  example: []
+  syntax:
+    content: 'public class AlreadyExistsException : Exception'
+    content.vb: >-
+      Public Class AlreadyExistsException
+          Inherits Exception
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Domain.Exceptions.AlreadyExistsException.#ctor(SerializationInfo,StreamingContext)
+  commentId: M:Domain.Exceptions.AlreadyExistsException.#ctor(SerializationInfo,StreamingContext)
+  id: '#ctor(SerializationInfo,StreamingContext)'
+  parent: Domain.Exceptions.AlreadyExistsException
+  langs:
+  - csharp
+  - vb
+  name: AlreadyExistsException(SerializationInfo, StreamingContext)
+  nameWithType: AlreadyExistsException.AlreadyExistsException(SerializationInfo, StreamingContext)
+  fullName: Domain.Exceptions.AlreadyExistsException.AlreadyExistsException(SerializationInfo, StreamingContext)
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Exceptions/AlreadyExistsException.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: .ctor
+    path: ../Domain/Exceptions/AlreadyExistsException.cs
+    startLine: 10
+  assemblies:
+  - Domain
+  namespace: Domain.Exceptions
+  syntax:
+    content: protected AlreadyExistsException(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: SerializationInfo
+    - id: context
+      type: StreamingContext
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: Domain.Exceptions.AlreadyExistsException.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Domain.Exceptions.AlreadyExistsException.#ctor
+  commentId: M:Domain.Exceptions.AlreadyExistsException.#ctor
+  id: '#ctor'
+  parent: Domain.Exceptions.AlreadyExistsException
+  langs:
+  - csharp
+  - vb
+  name: AlreadyExistsException()
+  nameWithType: AlreadyExistsException.AlreadyExistsException()
+  fullName: Domain.Exceptions.AlreadyExistsException.AlreadyExistsException()
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Exceptions/AlreadyExistsException.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: .ctor
+    path: ../Domain/Exceptions/AlreadyExistsException.cs
+    startLine: 14
+  assemblies:
+  - Domain
+  namespace: Domain.Exceptions
+  syntax:
+    content: public AlreadyExistsException()
+    content.vb: Public Sub New
+  overload: Domain.Exceptions.AlreadyExistsException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Domain.Exceptions
+  commentId: N:Domain.Exceptions
+  name: Domain.Exceptions
+  nameWithType: Domain.Exceptions
+  fullName: Domain.Exceptions
+- uid: Domain.Exceptions.AlreadyExistsException.#ctor*
+  commentId: Overload:Domain.Exceptions.AlreadyExistsException.#ctor
+  name: AlreadyExistsException
+  nameWithType: AlreadyExistsException.AlreadyExistsException
+  fullName: Domain.Exceptions.AlreadyExistsException.AlreadyExistsException
+- uid: SerializationInfo
+  commentId: '!:SerializationInfo'
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: SerializationInfo
+- uid: StreamingContext
+  commentId: '!:StreamingContext'
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: StreamingContext

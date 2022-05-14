@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Services.Queries.GetItemsQuery
+  commentId: T:Domain.Services.Queries.GetItemsQuery
+  id: GetItemsQuery
+  parent: Domain.Services.Queries
+  children:
+  - Domain.Services.Queries.GetItemsQuery.#ctor(Domain.InventoryAggregate.IInventoryRepository)
+  - Domain.Services.Queries.GetItemsQuery.RunAsync
+  langs:
+  - csharp
+  - vb
+  name: GetItemsQuery
+  nameWithType: GetItemsQuery
+  fullName: Domain.Services.Queries.GetItemsQuery
+  type: Class
+  source:
+    remote:
+      path: Domain/Services/Queries/GetItemsQuery.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: GetItemsQuery
+    path: ../Domain/Services/Queries/GetItemsQuery.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Queries
+  syntax:
+    content: 'public class GetItemsQuery : object'
+    content.vb: >-
+      Public Class GetItemsQuery
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Domain.Services.Queries.GetItemsQuery.#ctor(Domain.InventoryAggregate.IInventoryRepository)
+  commentId: M:Domain.Services.Queries.GetItemsQuery.#ctor(Domain.InventoryAggregate.IInventoryRepository)
+  id: '#ctor(Domain.InventoryAggregate.IInventoryRepository)'
+  parent: Domain.Services.Queries.GetItemsQuery
+  langs:
+  - csharp
+  - vb
+  name: GetItemsQuery(IInventoryRepository)
+  nameWithType: GetItemsQuery.GetItemsQuery(IInventoryRepository)
+  fullName: Domain.Services.Queries.GetItemsQuery.GetItemsQuery(Domain.InventoryAggregate.IInventoryRepository)
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Services/Queries/GetItemsQuery.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: .ctor
+    path: ../Domain/Services/Queries/GetItemsQuery.cs
+    startLine: 9
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Queries
+  syntax:
+    content: public GetItemsQuery(IInventoryRepository inventoryRepository)
+    parameters:
+    - id: inventoryRepository
+      type: Domain.InventoryAggregate.IInventoryRepository
+    content.vb: Public Sub New(inventoryRepository As IInventoryRepository)
+  overload: Domain.Services.Queries.GetItemsQuery.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Domain.Services.Queries.GetItemsQuery.RunAsync
+  commentId: M:Domain.Services.Queries.GetItemsQuery.RunAsync
+  id: RunAsync
+  parent: Domain.Services.Queries.GetItemsQuery
+  langs:
+  - csharp
+  - vb
+  name: RunAsync()
+  nameWithType: GetItemsQuery.RunAsync()
+  fullName: Domain.Services.Queries.GetItemsQuery.RunAsync()
+  type: Method
+  source:
+    remote:
+      path: Domain/Services/Queries/GetItemsQuery.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: RunAsync
+    path: ../Domain/Services/Queries/GetItemsQuery.cs
+    startLine: 14
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Queries
+  syntax:
+    content: public async Task<IList<Item>> RunAsync()
+    return:
+      type: Task{IList{Domain.InventoryAggregate.Entities.Item}}
+    content.vb: Public Function RunAsync As Task(Of IList(Of Item))
+  overload: Domain.Services.Queries.GetItemsQuery.RunAsync*
+  modifiers.csharp:
+  - public
+  - async
+  modifiers.vb:
+  - Public
+references:
+- uid: Domain.Services.Queries
+  commentId: N:Domain.Services.Queries
+  name: Domain.Services.Queries
+  nameWithType: Domain.Services.Queries
+  fullName: Domain.Services.Queries
+- uid: Domain.Services.Queries.GetItemsQuery.#ctor*
+  commentId: Overload:Domain.Services.Queries.GetItemsQuery.#ctor
+  name: GetItemsQuery
+  nameWithType: GetItemsQuery.GetItemsQuery
+  fullName: Domain.Services.Queries.GetItemsQuery.GetItemsQuery
+- uid: Domain.InventoryAggregate.IInventoryRepository
+  commentId: T:Domain.InventoryAggregate.IInventoryRepository
+  parent: Domain.InventoryAggregate
+  name: IInventoryRepository
+  nameWithType: IInventoryRepository
+  fullName: Domain.InventoryAggregate.IInventoryRepository
+- uid: Domain.InventoryAggregate
+  commentId: N:Domain.InventoryAggregate
+  name: Domain.InventoryAggregate
+  nameWithType: Domain.InventoryAggregate
+  fullName: Domain.InventoryAggregate
+- uid: Domain.Services.Queries.GetItemsQuery.RunAsync*
+  commentId: Overload:Domain.Services.Queries.GetItemsQuery.RunAsync
+  name: RunAsync
+  nameWithType: GetItemsQuery.RunAsync
+  fullName: Domain.Services.Queries.GetItemsQuery.RunAsync
+- uid: Task{IList{Domain.InventoryAggregate.Entities.Item}}
+  commentId: '!:Task{IList{Domain.InventoryAggregate.Entities.Item}}'
+  definition: Task`1
+  name: Task<IList<Item>>
+  nameWithType: Task<IList<Item>>
+  fullName: Task<IList<Domain.InventoryAggregate.Entities.Item>>
+  nameWithType.vb: Task(Of IList(Of Item))
+  fullName.vb: Task(Of IList(Of Domain.InventoryAggregate.Entities.Item))
+  name.vb: Task(Of IList(Of Item))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Domain.InventoryAggregate.Entities.Item
+    name: Item
+    nameWithType: Item
+    fullName: Domain.InventoryAggregate.Entities.Item
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Domain.InventoryAggregate.Entities.Item
+    name: Item
+    nameWithType: Item
+    fullName: Domain.InventoryAggregate.Entities.Item
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

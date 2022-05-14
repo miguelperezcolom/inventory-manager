@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.InventoryAggregate.ItemName
+  commentId: T:Domain.InventoryAggregate.ItemName
+  id: ItemName
+  parent: Domain.InventoryAggregate
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ItemName
+  nameWithType: ItemName
+  fullName: Domain.InventoryAggregate.ItemName
+  type: Class
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/ValueObjects/ItemName.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: ItemName
+    path: ../Domain/Aggregates/InventoryAggregate/ValueObjects/ItemName.cs
+    startLine: 2
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate
+  syntax:
+    content: 'public class ItemName : object'
+    content.vb: >-
+      Public Class ItemName
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: Domain.InventoryAggregate
+  commentId: N:Domain.InventoryAggregate
+  name: Domain.InventoryAggregate
+  nameWithType: Domain.InventoryAggregate
+  fullName: Domain.InventoryAggregate

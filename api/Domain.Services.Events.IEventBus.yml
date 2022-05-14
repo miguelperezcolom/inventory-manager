@@ -1,0 +1,81 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Services.Events.IEventBus
+  commentId: T:Domain.Services.Events.IEventBus
+  id: IEventBus
+  parent: Domain.Services.Events
+  children:
+  - Domain.Services.Events.IEventBus.Publish(Domain.Services.Events.Event)
+  langs:
+  - csharp
+  - vb
+  name: IEventBus
+  nameWithType: IEventBus
+  fullName: Domain.Services.Events.IEventBus
+  type: Interface
+  source:
+    remote:
+      path: Domain/Services/Events/EventBus.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: IEventBus
+    path: ../Domain/Services/Events/EventBus.cs
+    startLine: 2
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Events
+  syntax:
+    content: public interface IEventBus
+    content.vb: Public Interface IEventBus
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Domain.Services.Events.IEventBus.Publish(Domain.Services.Events.Event)
+  commentId: M:Domain.Services.Events.IEventBus.Publish(Domain.Services.Events.Event)
+  id: Publish(Domain.Services.Events.Event)
+  parent: Domain.Services.Events.IEventBus
+  langs:
+  - csharp
+  - vb
+  name: Publish(Event)
+  nameWithType: IEventBus.Publish(Event)
+  fullName: Domain.Services.Events.IEventBus.Publish(Domain.Services.Events.Event)
+  type: Method
+  source:
+    remote:
+      path: Domain/Services/Events/EventBus.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Publish
+    path: ../Domain/Services/Events/EventBus.cs
+    startLine: 4
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Events
+  syntax:
+    content: void Publish(Event anEvent)
+    parameters:
+    - id: anEvent
+      type: Domain.Services.Events.Event
+    content.vb: Sub Publish(anEvent As  Event)
+  overload: Domain.Services.Events.IEventBus.Publish*
+references:
+- uid: Domain.Services.Events
+  commentId: N:Domain.Services.Events
+  name: Domain.Services.Events
+  nameWithType: Domain.Services.Events
+  fullName: Domain.Services.Events
+- uid: Domain.Services.Events.IEventBus.Publish*
+  commentId: Overload:Domain.Services.Events.IEventBus.Publish
+  name: Publish
+  nameWithType: IEventBus.Publish
+  fullName: Domain.Services.Events.IEventBus.Publish
+- uid: Domain.Services.Events.Event
+  commentId: T:Domain.Services.Events.Event
+  parent: Domain.Services.Events
+  name: Event
+  nameWithType: Event
+  fullName: Domain.Services.Events.Event

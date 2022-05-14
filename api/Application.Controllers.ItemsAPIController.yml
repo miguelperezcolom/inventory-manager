@@ -1,0 +1,589 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Controllers.ItemsAPIController
+  commentId: T:Application.Controllers.ItemsAPIController
+  id: ItemsAPIController
+  parent: Application.Controllers
+  children:
+  - Application.Controllers.ItemsAPIController.#ctor(ILogger{Application.Controllers.ItemsAPIController},Domain.Services.Factories.CommandFactory)
+  - Application.Controllers.ItemsAPIController.Add(Application.Model.Item)
+  - Application.Controllers.ItemsAPIController.Delete(Application.Model.Item)
+  - Application.Controllers.ItemsAPIController.GetAll
+  - Application.Controllers.ItemsAPIController.GetItem(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ItemsAPIController
+  nameWithType: ItemsAPIController
+  fullName: Application.Controllers.ItemsAPIController
+  type: Class
+  source:
+    remote:
+      path: Application/Controllers/ItemsAPIController.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: ItemsAPIController
+    path: ../Application/Controllers/ItemsAPIController.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Controllers
+  syntax:
+    content: 'public class ItemsAPIController : ControllerBase'
+    content.vb: >-
+      Public Class ItemsAPIController
+          Inherits ControllerBase
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Application.Controllers.ItemsAPIController.#ctor(ILogger{Application.Controllers.ItemsAPIController},Domain.Services.Factories.CommandFactory)
+  commentId: M:Application.Controllers.ItemsAPIController.#ctor(ILogger{Application.Controllers.ItemsAPIController},Domain.Services.Factories.CommandFactory)
+  id: '#ctor(ILogger{Application.Controllers.ItemsAPIController},Domain.Services.Factories.CommandFactory)'
+  parent: Application.Controllers.ItemsAPIController
+  langs:
+  - csharp
+  - vb
+  name: ItemsAPIController(ILogger<ItemsAPIController>, CommandFactory)
+  nameWithType: ItemsAPIController.ItemsAPIController(ILogger<ItemsAPIController>, CommandFactory)
+  fullName: Application.Controllers.ItemsAPIController.ItemsAPIController(ILogger<Application.Controllers.ItemsAPIController>, Domain.Services.Factories.CommandFactory)
+  type: Constructor
+  source:
+    remote:
+      path: Application/Controllers/ItemsAPIController.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: .ctor
+    path: ../Application/Controllers/ItemsAPIController.cs
+    startLine: 17
+  assemblies:
+  - Application
+  namespace: Application.Controllers
+  syntax:
+    content: public ItemsAPIController(ILogger<ItemsAPIController> logger, CommandFactory commandFactory)
+    parameters:
+    - id: logger
+      type: ILogger{Application.Controllers.ItemsAPIController}
+    - id: commandFactory
+      type: Domain.Services.Factories.CommandFactory
+    content.vb: Public Sub New(logger As ILogger(Of ItemsAPIController), commandFactory As CommandFactory)
+  overload: Application.Controllers.ItemsAPIController.#ctor*
+  nameWithType.vb: ItemsAPIController.ItemsAPIController(ILogger(Of ItemsAPIController), CommandFactory)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Application.Controllers.ItemsAPIController.ItemsAPIController(ILogger(Of Application.Controllers.ItemsAPIController), Domain.Services.Factories.CommandFactory)
+  name.vb: ItemsAPIController(ILogger(Of ItemsAPIController), CommandFactory)
+- uid: Application.Controllers.ItemsAPIController.Add(Application.Model.Item)
+  commentId: M:Application.Controllers.ItemsAPIController.Add(Application.Model.Item)
+  id: Add(Application.Model.Item)
+  parent: Application.Controllers.ItemsAPIController
+  langs:
+  - csharp
+  - vb
+  name: Add(Item)
+  nameWithType: ItemsAPIController.Add(Item)
+  fullName: Application.Controllers.ItemsAPIController.Add(Application.Model.Item)
+  type: Method
+  source:
+    remote:
+      path: Application/Controllers/ItemsAPIController.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Add
+    path: ../Application/Controllers/ItemsAPIController.cs
+    startLine: 23
+  assemblies:
+  - Application
+  namespace: Application.Controllers
+  syntax:
+    content: public async Task<ActionResult<Item>> Add(Item item)
+    parameters:
+    - id: item
+      type: Application.Model.Item
+    return:
+      type: Task{ActionResult{Application.Model.Item}}
+    content.vb: Public Function Add(item As Item) As Task(Of ActionResult(Of Item))
+  overload: Application.Controllers.ItemsAPIController.Add*
+  modifiers.csharp:
+  - public
+  - async
+  modifiers.vb:
+  - Public
+- uid: Application.Controllers.ItemsAPIController.GetAll
+  commentId: M:Application.Controllers.ItemsAPIController.GetAll
+  id: GetAll
+  parent: Application.Controllers.ItemsAPIController
+  langs:
+  - csharp
+  - vb
+  name: GetAll()
+  nameWithType: ItemsAPIController.GetAll()
+  fullName: Application.Controllers.ItemsAPIController.GetAll()
+  type: Method
+  source:
+    remote:
+      path: Application/Controllers/ItemsAPIController.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: GetAll
+    path: ../Application/Controllers/ItemsAPIController.cs
+    startLine: 32
+  assemblies:
+  - Application
+  namespace: Application.Controllers
+  syntax:
+    content: public async Task<ActionResult<IList<Item>>> GetAll()
+    return:
+      type: Task{ActionResult{IList{Application.Model.Item}}}
+    content.vb: Public Function GetAll As Task(Of ActionResult(Of IList(Of Item)))
+  overload: Application.Controllers.ItemsAPIController.GetAll*
+  modifiers.csharp:
+  - public
+  - async
+  modifiers.vb:
+  - Public
+- uid: Application.Controllers.ItemsAPIController.GetItem(System.String)
+  commentId: M:Application.Controllers.ItemsAPIController.GetItem(System.String)
+  id: GetItem(System.String)
+  parent: Application.Controllers.ItemsAPIController
+  langs:
+  - csharp
+  - vb
+  name: GetItem(String)
+  nameWithType: ItemsAPIController.GetItem(String)
+  fullName: Application.Controllers.ItemsAPIController.GetItem(System.String)
+  type: Method
+  source:
+    remote:
+      path: Application/Controllers/ItemsAPIController.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: GetItem
+    path: ../Application/Controllers/ItemsAPIController.cs
+    startLine: 41
+  assemblies:
+  - Application
+  namespace: Application.Controllers
+  syntax:
+    content: public async Task<ActionResult<Item>> GetItem(string itemId)
+    parameters:
+    - id: itemId
+      type: System.String
+    return:
+      type: Task{ActionResult{Application.Model.Item}}
+    content.vb: Public Function GetItem(itemId As String) As Task(Of ActionResult(Of Item))
+  overload: Application.Controllers.ItemsAPIController.GetItem*
+  modifiers.csharp:
+  - public
+  - async
+  modifiers.vb:
+  - Public
+- uid: Application.Controllers.ItemsAPIController.Delete(Application.Model.Item)
+  commentId: M:Application.Controllers.ItemsAPIController.Delete(Application.Model.Item)
+  id: Delete(Application.Model.Item)
+  parent: Application.Controllers.ItemsAPIController
+  langs:
+  - csharp
+  - vb
+  name: Delete(Item)
+  nameWithType: ItemsAPIController.Delete(Item)
+  fullName: Application.Controllers.ItemsAPIController.Delete(Application.Model.Item)
+  type: Method
+  source:
+    remote:
+      path: Application/Controllers/ItemsAPIController.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Delete
+    path: ../Application/Controllers/ItemsAPIController.cs
+    startLine: 54
+  assemblies:
+  - Application
+  namespace: Application.Controllers
+  syntax:
+    content: public async Task<ActionResult> Delete(Item item)
+    parameters:
+    - id: item
+      type: Application.Model.Item
+    return:
+      type: Task{ActionResult}
+    content.vb: Public Function Delete(item As Item) As Task(Of ActionResult)
+  overload: Application.Controllers.ItemsAPIController.Delete*
+  modifiers.csharp:
+  - public
+  - async
+  modifiers.vb:
+  - Public
+references:
+- uid: Application.Controllers
+  commentId: N:Application.Controllers
+  name: Application.Controllers
+  nameWithType: Application.Controllers
+  fullName: Application.Controllers
+- uid: Application.Controllers.ItemsAPIController.#ctor*
+  commentId: Overload:Application.Controllers.ItemsAPIController.#ctor
+  name: ItemsAPIController
+  nameWithType: ItemsAPIController.ItemsAPIController
+  fullName: Application.Controllers.ItemsAPIController.ItemsAPIController
+- uid: ILogger{Application.Controllers.ItemsAPIController}
+  commentId: '!:ILogger{Application.Controllers.ItemsAPIController}'
+  definition: ILogger`1
+  name: ILogger<ItemsAPIController>
+  nameWithType: ILogger<ItemsAPIController>
+  fullName: ILogger<Application.Controllers.ItemsAPIController>
+  nameWithType.vb: ILogger(Of ItemsAPIController)
+  fullName.vb: ILogger(Of Application.Controllers.ItemsAPIController)
+  name.vb: ILogger(Of ItemsAPIController)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Application.Controllers.ItemsAPIController
+    name: ItemsAPIController
+    nameWithType: ItemsAPIController
+    fullName: Application.Controllers.ItemsAPIController
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Application.Controllers.ItemsAPIController
+    name: ItemsAPIController
+    nameWithType: ItemsAPIController
+    fullName: Application.Controllers.ItemsAPIController
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Domain.Services.Factories.CommandFactory
+  commentId: T:Domain.Services.Factories.CommandFactory
+  parent: Domain.Services.Factories
+  name: CommandFactory
+  nameWithType: CommandFactory
+  fullName: Domain.Services.Factories.CommandFactory
+- uid: ILogger`1
+  commentId: '!:ILogger`1'
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Domain.Services.Factories
+  commentId: N:Domain.Services.Factories
+  name: Domain.Services.Factories
+  nameWithType: Domain.Services.Factories
+  fullName: Domain.Services.Factories
+- uid: Application.Controllers.ItemsAPIController.Add*
+  commentId: Overload:Application.Controllers.ItemsAPIController.Add
+  name: Add
+  nameWithType: ItemsAPIController.Add
+  fullName: Application.Controllers.ItemsAPIController.Add
+- uid: Application.Model.Item
+  commentId: T:Application.Model.Item
+  parent: Application.Model
+  name: Item
+  nameWithType: Item
+  fullName: Application.Model.Item
+- uid: Task{ActionResult{Application.Model.Item}}
+  commentId: '!:Task{ActionResult{Application.Model.Item}}'
+  definition: Task`1
+  name: Task<ActionResult<Item>>
+  nameWithType: Task<ActionResult<Item>>
+  fullName: Task<ActionResult<Application.Model.Item>>
+  nameWithType.vb: Task(Of ActionResult(Of Item))
+  fullName.vb: Task(Of ActionResult(Of Application.Model.Item))
+  name.vb: Task(Of ActionResult(Of Item))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Application.Model.Item
+    name: Item
+    nameWithType: Item
+    fullName: Application.Model.Item
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Application.Model.Item
+    name: Item
+    nameWithType: Item
+    fullName: Application.Model.Item
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Application.Model
+  commentId: N:Application.Model
+  name: Application.Model
+  nameWithType: Application.Model
+  fullName: Application.Model
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Application.Controllers.ItemsAPIController.GetAll*
+  commentId: Overload:Application.Controllers.ItemsAPIController.GetAll
+  name: GetAll
+  nameWithType: ItemsAPIController.GetAll
+  fullName: Application.Controllers.ItemsAPIController.GetAll
+- uid: Task{ActionResult{IList{Application.Model.Item}}}
+  commentId: '!:Task{ActionResult{IList{Application.Model.Item}}}'
+  definition: Task`1
+  name: Task<ActionResult<IList<Item>>>
+  nameWithType: Task<ActionResult<IList<Item>>>
+  fullName: Task<ActionResult<IList<Application.Model.Item>>>
+  nameWithType.vb: Task(Of ActionResult(Of IList(Of Item)))
+  fullName.vb: Task(Of ActionResult(Of IList(Of Application.Model.Item)))
+  name.vb: Task(Of ActionResult(Of IList(Of Item)))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Application.Model.Item
+    name: Item
+    nameWithType: Item
+    fullName: Application.Model.Item
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Application.Model.Item
+    name: Item
+    nameWithType: Item
+    fullName: Application.Model.Item
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Application.Controllers.ItemsAPIController.GetItem*
+  commentId: Overload:Application.Controllers.ItemsAPIController.GetItem
+  name: GetItem
+  nameWithType: ItemsAPIController.GetItem
+  fullName: Application.Controllers.ItemsAPIController.GetItem
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Application.Controllers.ItemsAPIController.Delete*
+  commentId: Overload:Application.Controllers.ItemsAPIController.Delete
+  name: Delete
+  nameWithType: ItemsAPIController.Delete
+  fullName: Application.Controllers.ItemsAPIController.Delete
+- uid: Task{ActionResult}
+  commentId: '!:Task{ActionResult}'
+  definition: Task`1
+  name: Task<ActionResult>
+  nameWithType: Task<ActionResult>
+  fullName: Task<ActionResult>
+  nameWithType.vb: Task(Of ActionResult)
+  fullName.vb: Task(Of ActionResult)
+  name.vb: Task(Of ActionResult)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ActionResult
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: ActionResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ActionResult
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: ActionResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Services.Factories
+  commentId: N:Domain.Services.Factories
+  id: Domain.Services.Factories
+  children:
+  - Domain.Services.Factories.CommandFactory
+  langs:
+  - csharp
+  - vb
+  name: Domain.Services.Factories
+  nameWithType: Domain.Services.Factories
+  fullName: Domain.Services.Factories
+  type: Namespace
+  assemblies:
+  - Domain
+references:
+- uid: Domain.Services.Factories.CommandFactory
+  commentId: T:Domain.Services.Factories.CommandFactory
+  parent: Domain.Services.Factories
+  name: CommandFactory
+  nameWithType: CommandFactory
+  fullName: Domain.Services.Factories.CommandFactory
+- uid: Domain.Services.Factories
+  commentId: N:Domain.Services.Factories
+  name: Domain.Services.Factories
+  nameWithType: Domain.Services.Factories
+  fullName: Domain.Services.Factories

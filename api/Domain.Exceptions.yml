@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Exceptions
+  commentId: N:Domain.Exceptions
+  id: Domain.Exceptions
+  children:
+  - Domain.Exceptions.AlreadyExistsException
+  langs:
+  - csharp
+  - vb
+  name: Domain.Exceptions
+  nameWithType: Domain.Exceptions
+  fullName: Domain.Exceptions
+  type: Namespace
+  assemblies:
+  - Domain
+references:
+- uid: Domain.Exceptions.AlreadyExistsException
+  commentId: T:Domain.Exceptions.AlreadyExistsException
+  name: AlreadyExistsException
+  nameWithType: AlreadyExistsException
+  fullName: Domain.Exceptions.AlreadyExistsException

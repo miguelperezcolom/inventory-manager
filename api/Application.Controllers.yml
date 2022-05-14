@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Controllers
+  commentId: N:Application.Controllers
+  id: Application.Controllers
+  children:
+  - Application.Controllers.ItemsAPIController
+  langs:
+  - csharp
+  - vb
+  name: Application.Controllers
+  nameWithType: Application.Controllers
+  fullName: Application.Controllers
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Controllers.ItemsAPIController
+  commentId: T:Application.Controllers.ItemsAPIController
+  name: ItemsAPIController
+  nameWithType: ItemsAPIController
+  fullName: Application.Controllers.ItemsAPIController

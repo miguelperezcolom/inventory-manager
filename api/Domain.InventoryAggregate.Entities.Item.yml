@@ -1,0 +1,326 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.InventoryAggregate.Entities.Item
+  commentId: T:Domain.InventoryAggregate.Entities.Item
+  id: Item
+  parent: Domain.InventoryAggregate.Entities
+  children:
+  - Domain.InventoryAggregate.Entities.Item.#ctor(System.String,DateOnly,Domain.InventoryAggregate.ItemType)
+  - Domain.InventoryAggregate.Entities.Item.ExpirationDate
+  - Domain.InventoryAggregate.Entities.Item.Expired
+  - Domain.InventoryAggregate.Entities.Item.MarkAsExpired(DateOnly)
+  - Domain.InventoryAggregate.Entities.Item.Name
+  - Domain.InventoryAggregate.Entities.Item.Type
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: Item
+  fullName: Domain.InventoryAggregate.Entities.Item
+  type: Class
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/Entities/Item.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Item
+    path: ../Domain/Aggregates/InventoryAggregate/Entities/Item.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate.Entities
+  summary: "\nItem&apos;s entity class\n"
+  example: []
+  syntax:
+    content: 'public class Item : object'
+    content.vb: >-
+      Public Class Item
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Domain.InventoryAggregate.Entities.Item.Name
+  commentId: P:Domain.InventoryAggregate.Entities.Item.Name
+  id: Name
+  parent: Domain.InventoryAggregate.Entities.Item
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Item.Name
+  fullName: Domain.InventoryAggregate.Entities.Item.Name
+  type: Property
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/Entities/Item.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Name
+    path: ../Domain/Aggregates/InventoryAggregate/Entities/Item.cs
+    startLine: 11
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate.Entities
+  summary: "\nItem&apos;s name\n"
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Domain.InventoryAggregate.Entities.Item.Name*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Domain.InventoryAggregate.Entities.Item.ExpirationDate
+  commentId: P:Domain.InventoryAggregate.Entities.Item.ExpirationDate
+  id: ExpirationDate
+  parent: Domain.InventoryAggregate.Entities.Item
+  langs:
+  - csharp
+  - vb
+  name: ExpirationDate
+  nameWithType: Item.ExpirationDate
+  fullName: Domain.InventoryAggregate.Entities.Item.ExpirationDate
+  type: Property
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/Entities/Item.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: ExpirationDate
+    path: ../Domain/Aggregates/InventoryAggregate/Entities/Item.cs
+    startLine: 16
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate.Entities
+  summary: "\nItem&apos;s expiration date\n"
+  example: []
+  syntax:
+    content: public DateOnly ExpirationDate { get; }
+    parameters: []
+    return:
+      type: DateOnly
+    content.vb: Public ReadOnly Property ExpirationDate As DateOnly
+  overload: Domain.InventoryAggregate.Entities.Item.ExpirationDate*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Domain.InventoryAggregate.Entities.Item.Type
+  commentId: P:Domain.InventoryAggregate.Entities.Item.Type
+  id: Type
+  parent: Domain.InventoryAggregate.Entities.Item
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Item.Type
+  fullName: Domain.InventoryAggregate.Entities.Item.Type
+  type: Property
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/Entities/Item.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Type
+    path: ../Domain/Aggregates/InventoryAggregate/Entities/Item.cs
+    startLine: 21
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate.Entities
+  summary: "\nItem&apos;s type\n"
+  example: []
+  syntax:
+    content: public ItemType Type { get; }
+    parameters: []
+    return:
+      type: Domain.InventoryAggregate.ItemType
+    content.vb: Public ReadOnly Property Type As ItemType
+  overload: Domain.InventoryAggregate.Entities.Item.Type*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Domain.InventoryAggregate.Entities.Item.Expired
+  commentId: P:Domain.InventoryAggregate.Entities.Item.Expired
+  id: Expired
+  parent: Domain.InventoryAggregate.Entities.Item
+  langs:
+  - csharp
+  - vb
+  name: Expired
+  nameWithType: Item.Expired
+  fullName: Domain.InventoryAggregate.Entities.Item.Expired
+  type: Property
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/Entities/Item.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Expired
+    path: ../Domain/Aggregates/InventoryAggregate/Entities/Item.cs
+    startLine: 23
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate.Entities
+  syntax:
+    content: public bool Expired { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Expired As Boolean
+  overload: Domain.InventoryAggregate.Entities.Item.Expired*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Domain.InventoryAggregate.Entities.Item.#ctor(System.String,DateOnly,Domain.InventoryAggregate.ItemType)
+  commentId: M:Domain.InventoryAggregate.Entities.Item.#ctor(System.String,DateOnly,Domain.InventoryAggregate.ItemType)
+  id: '#ctor(System.String,DateOnly,Domain.InventoryAggregate.ItemType)'
+  parent: Domain.InventoryAggregate.Entities.Item
+  langs:
+  - csharp
+  - vb
+  name: Item(String, DateOnly, ItemType)
+  nameWithType: Item.Item(String, DateOnly, ItemType)
+  fullName: Domain.InventoryAggregate.Entities.Item.Item(System.String, DateOnly, Domain.InventoryAggregate.ItemType)
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/Entities/Item.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: .ctor
+    path: ../Domain/Aggregates/InventoryAggregate/Entities/Item.cs
+    startLine: 25
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate.Entities
+  syntax:
+    content: protected Item(string name, DateOnly expirationDate, ItemType type)
+    parameters:
+    - id: name
+      type: System.String
+    - id: expirationDate
+      type: DateOnly
+    - id: type
+      type: Domain.InventoryAggregate.ItemType
+    content.vb: Protected Sub New(name As String, expirationDate As DateOnly, type As ItemType)
+  overload: Domain.InventoryAggregate.Entities.Item.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Domain.InventoryAggregate.Entities.Item.MarkAsExpired(DateOnly)
+  commentId: M:Domain.InventoryAggregate.Entities.Item.MarkAsExpired(DateOnly)
+  id: MarkAsExpired(DateOnly)
+  parent: Domain.InventoryAggregate.Entities.Item
+  langs:
+  - csharp
+  - vb
+  name: MarkAsExpired(DateOnly)
+  nameWithType: Item.MarkAsExpired(DateOnly)
+  fullName: Domain.InventoryAggregate.Entities.Item.MarkAsExpired(DateOnly)
+  type: Method
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/Entities/Item.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: MarkAsExpired
+    path: ../Domain/Aggregates/InventoryAggregate/Entities/Item.cs
+    startLine: 32
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate.Entities
+  syntax:
+    content: protected bool MarkAsExpired(DateOnly date)
+    parameters:
+    - id: date
+      type: DateOnly
+    return:
+      type: System.Boolean
+    content.vb: Protected Function MarkAsExpired(date As DateOnly) As Boolean
+  overload: Domain.InventoryAggregate.Entities.Item.MarkAsExpired*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Domain.InventoryAggregate.Entities
+  commentId: N:Domain.InventoryAggregate.Entities
+  name: Domain.InventoryAggregate.Entities
+  nameWithType: Domain.InventoryAggregate.Entities
+  fullName: Domain.InventoryAggregate.Entities
+- uid: Domain.InventoryAggregate.Entities.Item.Name*
+  commentId: Overload:Domain.InventoryAggregate.Entities.Item.Name
+  name: Name
+  nameWithType: Item.Name
+  fullName: Domain.InventoryAggregate.Entities.Item.Name
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Domain.InventoryAggregate.Entities.Item.ExpirationDate*
+  commentId: Overload:Domain.InventoryAggregate.Entities.Item.ExpirationDate
+  name: ExpirationDate
+  nameWithType: Item.ExpirationDate
+  fullName: Domain.InventoryAggregate.Entities.Item.ExpirationDate
+- uid: DateOnly
+  isExternal: true
+  name: DateOnly
+  nameWithType: DateOnly
+  fullName: DateOnly
+- uid: Domain.InventoryAggregate.Entities.Item.Type*
+  commentId: Overload:Domain.InventoryAggregate.Entities.Item.Type
+  name: Type
+  nameWithType: Item.Type
+  fullName: Domain.InventoryAggregate.Entities.Item.Type
+- uid: Domain.InventoryAggregate.ItemType
+  commentId: T:Domain.InventoryAggregate.ItemType
+  parent: Domain.InventoryAggregate
+  name: ItemType
+  nameWithType: ItemType
+  fullName: Domain.InventoryAggregate.ItemType
+- uid: Domain.InventoryAggregate
+  commentId: N:Domain.InventoryAggregate
+  name: Domain.InventoryAggregate
+  nameWithType: Domain.InventoryAggregate
+  fullName: Domain.InventoryAggregate
+- uid: Domain.InventoryAggregate.Entities.Item.Expired*
+  commentId: Overload:Domain.InventoryAggregate.Entities.Item.Expired
+  name: Expired
+  nameWithType: Item.Expired
+  fullName: Domain.InventoryAggregate.Entities.Item.Expired
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Domain.InventoryAggregate.Entities.Item.#ctor*
+  commentId: Overload:Domain.InventoryAggregate.Entities.Item.#ctor
+  name: Item
+  nameWithType: Item.Item
+  fullName: Domain.InventoryAggregate.Entities.Item.Item
+- uid: Domain.InventoryAggregate.Entities.Item.MarkAsExpired*
+  commentId: Overload:Domain.InventoryAggregate.Entities.Item.MarkAsExpired
+  name: MarkAsExpired
+  nameWithType: Item.MarkAsExpired
+  fullName: Domain.InventoryAggregate.Entities.Item.MarkAsExpired

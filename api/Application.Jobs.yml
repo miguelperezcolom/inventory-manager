@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Jobs
+  commentId: N:Application.Jobs
+  id: Application.Jobs
+  children:
+  - Application.Jobs.JobCreatorExtension
+  langs:
+  - csharp
+  - vb
+  name: Application.Jobs
+  nameWithType: Application.Jobs
+  fullName: Application.Jobs
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Jobs.JobCreatorExtension
+  commentId: T:Application.Jobs.JobCreatorExtension
+  name: JobCreatorExtension
+  nameWithType: JobCreatorExtension
+  fullName: Application.Jobs.JobCreatorExtension

@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.InventoryAggregate.IInventoryRepository
+  commentId: T:Domain.InventoryAggregate.IInventoryRepository
+  id: IInventoryRepository
+  parent: Domain.InventoryAggregate
+  children:
+  - Domain.InventoryAggregate.IInventoryRepository.Load
+  - Domain.InventoryAggregate.IInventoryRepository.Save(Domain.InventoryAggregate.Entities.Inventory)
+  langs:
+  - csharp
+  - vb
+  name: IInventoryRepository
+  nameWithType: IInventoryRepository
+  fullName: Domain.InventoryAggregate.IInventoryRepository
+  type: Interface
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/IInventoryRepository.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: IInventoryRepository
+    path: ../Domain/Aggregates/InventoryAggregate/IInventoryRepository.cs
+    startLine: 7
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate
+  summary: "\nInventory&apos;s reporitory interface\n"
+  example: []
+  syntax:
+    content: public interface IInventoryRepository
+    content.vb: Public Interface IInventoryRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Domain.InventoryAggregate.IInventoryRepository.Save(Domain.InventoryAggregate.Entities.Inventory)
+  commentId: M:Domain.InventoryAggregate.IInventoryRepository.Save(Domain.InventoryAggregate.Entities.Inventory)
+  id: Save(Domain.InventoryAggregate.Entities.Inventory)
+  parent: Domain.InventoryAggregate.IInventoryRepository
+  langs:
+  - csharp
+  - vb
+  name: Save(Inventory)
+  nameWithType: IInventoryRepository.Save(Inventory)
+  fullName: Domain.InventoryAggregate.IInventoryRepository.Save(Domain.InventoryAggregate.Entities.Inventory)
+  type: Method
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/IInventoryRepository.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Save
+    path: ../Domain/Aggregates/InventoryAggregate/IInventoryRepository.cs
+    startLine: 14
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate
+  summary: "\nSave an inventory\n"
+  example: []
+  syntax:
+    content: Inventory Save(Inventory inventory)
+    parameters:
+    - id: inventory
+      type: Domain.InventoryAggregate.Entities.Inventory
+      description: The inventory to be saved
+    return:
+      type: Domain.InventoryAggregate.Entities.Inventory
+      description: The saved inventory
+    content.vb: Function Save(inventory As Inventory) As Inventory
+  overload: Domain.InventoryAggregate.IInventoryRepository.Save*
+- uid: Domain.InventoryAggregate.IInventoryRepository.Load
+  commentId: M:Domain.InventoryAggregate.IInventoryRepository.Load
+  id: Load
+  parent: Domain.InventoryAggregate.IInventoryRepository
+  langs:
+  - csharp
+  - vb
+  name: Load()
+  nameWithType: IInventoryRepository.Load()
+  fullName: Domain.InventoryAggregate.IInventoryRepository.Load()
+  type: Method
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/IInventoryRepository.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Load
+    path: ../Domain/Aggregates/InventoryAggregate/IInventoryRepository.cs
+    startLine: 20
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate
+  summary: "\nLoad the inventory\n"
+  example: []
+  syntax:
+    content: Inventory Load()
+    return:
+      type: Domain.InventoryAggregate.Entities.Inventory
+      description: The inventory
+    content.vb: Function Load As Inventory
+  overload: Domain.InventoryAggregate.IInventoryRepository.Load*
+references:
+- uid: Domain.InventoryAggregate
+  commentId: N:Domain.InventoryAggregate
+  name: Domain.InventoryAggregate
+  nameWithType: Domain.InventoryAggregate
+  fullName: Domain.InventoryAggregate
+- uid: Domain.InventoryAggregate.IInventoryRepository.Save*
+  commentId: Overload:Domain.InventoryAggregate.IInventoryRepository.Save
+  name: Save
+  nameWithType: IInventoryRepository.Save
+  fullName: Domain.InventoryAggregate.IInventoryRepository.Save
+- uid: Domain.InventoryAggregate.Entities.Inventory
+  commentId: T:Domain.InventoryAggregate.Entities.Inventory
+  parent: Domain.InventoryAggregate.Entities
+  name: Inventory
+  nameWithType: Inventory
+  fullName: Domain.InventoryAggregate.Entities.Inventory
+- uid: Domain.InventoryAggregate.Entities
+  commentId: N:Domain.InventoryAggregate.Entities
+  name: Domain.InventoryAggregate.Entities
+  nameWithType: Domain.InventoryAggregate.Entities
+  fullName: Domain.InventoryAggregate.Entities
+- uid: Domain.InventoryAggregate.IInventoryRepository.Load*
+  commentId: Overload:Domain.InventoryAggregate.IInventoryRepository.Load
+  name: Load
+  nameWithType: IInventoryRepository.Load
+  fullName: Domain.InventoryAggregate.IInventoryRepository.Load

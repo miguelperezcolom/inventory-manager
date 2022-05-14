@@ -1,0 +1,47 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Services.Events
+  commentId: N:Domain.Services.Events
+  id: Domain.Services.Events
+  children:
+  - Domain.Services.Events.Event
+  - Domain.Services.Events.IEventBus
+  - Domain.Services.Events.ItemExpired
+  - Domain.Services.Events.ItemRemoved
+  langs:
+  - csharp
+  - vb
+  name: Domain.Services.Events
+  nameWithType: Domain.Services.Events
+  fullName: Domain.Services.Events
+  type: Namespace
+  assemblies:
+  - Domain
+references:
+- uid: Domain.Services.Events.ItemExpired
+  commentId: T:Domain.Services.Events.ItemExpired
+  name: ItemExpired
+  nameWithType: ItemExpired
+  fullName: Domain.Services.Events.ItemExpired
+- uid: Domain.Services.Events.ItemRemoved
+  commentId: T:Domain.Services.Events.ItemRemoved
+  name: ItemRemoved
+  nameWithType: ItemRemoved
+  fullName: Domain.Services.Events.ItemRemoved
+- uid: Domain.Services.Events.Event
+  commentId: T:Domain.Services.Events.Event
+  parent: Domain.Services.Events
+  name: Event
+  nameWithType: Event
+  fullName: Domain.Services.Events.Event
+- uid: Domain.Services.Events.IEventBus
+  commentId: T:Domain.Services.Events.IEventBus
+  parent: Domain.Services.Events
+  name: IEventBus
+  nameWithType: IEventBus
+  fullName: Domain.Services.Events.IEventBus
+- uid: Domain.Services.Events
+  commentId: N:Domain.Services.Events
+  name: Domain.Services.Events
+  nameWithType: Domain.Services.Events
+  fullName: Domain.Services.Events

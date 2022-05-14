@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Validators
+  commentId: N:Application.Validators
+  id: Application.Validators
+  children:
+  - Application.Validators.ItemValidator
+  langs:
+  - csharp
+  - vb
+  name: Application.Validators
+  nameWithType: Application.Validators
+  fullName: Application.Validators
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Validators.ItemValidator
+  commentId: T:Application.Validators.ItemValidator
+  name: ItemValidator
+  nameWithType: ItemValidator
+  fullName: Application.Validators.ItemValidator

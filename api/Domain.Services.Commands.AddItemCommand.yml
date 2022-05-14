@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Services.Commands.AddItemCommand
+  commentId: T:Domain.Services.Commands.AddItemCommand
+  id: AddItemCommand
+  parent: Domain.Services.Commands
+  children:
+  - Domain.Services.Commands.AddItemCommand.#ctor(Domain.InventoryAggregate.IInventoryRepository,System.String,DateOnly,Domain.InventoryAggregate.ItemType)
+  - Domain.Services.Commands.AddItemCommand.RunAsync
+  langs:
+  - csharp
+  - vb
+  name: AddItemCommand
+  nameWithType: AddItemCommand
+  fullName: Domain.Services.Commands.AddItemCommand
+  type: Class
+  source:
+    remote:
+      path: Domain/Services/Commands/AddItemCommand.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: AddItemCommand
+    path: ../Domain/Services/Commands/AddItemCommand.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Commands
+  syntax:
+    content: 'public class AddItemCommand : object'
+    content.vb: >-
+      Public Class AddItemCommand
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Domain.Services.Commands.AddItemCommand.#ctor(Domain.InventoryAggregate.IInventoryRepository,System.String,DateOnly,Domain.InventoryAggregate.ItemType)
+  commentId: M:Domain.Services.Commands.AddItemCommand.#ctor(Domain.InventoryAggregate.IInventoryRepository,System.String,DateOnly,Domain.InventoryAggregate.ItemType)
+  id: '#ctor(Domain.InventoryAggregate.IInventoryRepository,System.String,DateOnly,Domain.InventoryAggregate.ItemType)'
+  parent: Domain.Services.Commands.AddItemCommand
+  langs:
+  - csharp
+  - vb
+  name: AddItemCommand(IInventoryRepository, String, DateOnly, ItemType)
+  nameWithType: AddItemCommand.AddItemCommand(IInventoryRepository, String, DateOnly, ItemType)
+  fullName: Domain.Services.Commands.AddItemCommand.AddItemCommand(Domain.InventoryAggregate.IInventoryRepository, System.String, DateOnly, Domain.InventoryAggregate.ItemType)
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Services/Commands/AddItemCommand.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: .ctor
+    path: ../Domain/Services/Commands/AddItemCommand.cs
+    startLine: 15
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Commands
+  syntax:
+    content: public AddItemCommand(IInventoryRepository inventoryRepository, string name, DateOnly expirationDate, ItemType type)
+    parameters:
+    - id: inventoryRepository
+      type: Domain.InventoryAggregate.IInventoryRepository
+    - id: name
+      type: System.String
+    - id: expirationDate
+      type: DateOnly
+    - id: type
+      type: Domain.InventoryAggregate.ItemType
+    content.vb: Public Sub New(inventoryRepository As IInventoryRepository, name As String, expirationDate As DateOnly, type As ItemType)
+  overload: Domain.Services.Commands.AddItemCommand.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Domain.Services.Commands.AddItemCommand.RunAsync
+  commentId: M:Domain.Services.Commands.AddItemCommand.RunAsync
+  id: RunAsync
+  parent: Domain.Services.Commands.AddItemCommand
+  langs:
+  - csharp
+  - vb
+  name: RunAsync()
+  nameWithType: AddItemCommand.RunAsync()
+  fullName: Domain.Services.Commands.AddItemCommand.RunAsync()
+  type: Method
+  source:
+    remote:
+      path: Domain/Services/Commands/AddItemCommand.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: RunAsync
+    path: ../Domain/Services/Commands/AddItemCommand.cs
+    startLine: 23
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Commands
+  syntax:
+    content: public async Task<Item> RunAsync()
+    return:
+      type: Task{Domain.InventoryAggregate.Entities.Item}
+    content.vb: Public Function RunAsync As Task(Of Item)
+  overload: Domain.Services.Commands.AddItemCommand.RunAsync*
+  modifiers.csharp:
+  - public
+  - async
+  modifiers.vb:
+  - Public
+references:
+- uid: Domain.Services.Commands
+  commentId: N:Domain.Services.Commands
+  name: Domain.Services.Commands
+  nameWithType: Domain.Services.Commands
+  fullName: Domain.Services.Commands
+- uid: Domain.Services.Commands.AddItemCommand.#ctor*
+  commentId: Overload:Domain.Services.Commands.AddItemCommand.#ctor
+  name: AddItemCommand
+  nameWithType: AddItemCommand.AddItemCommand
+  fullName: Domain.Services.Commands.AddItemCommand.AddItemCommand
+- uid: Domain.InventoryAggregate.IInventoryRepository
+  commentId: T:Domain.InventoryAggregate.IInventoryRepository
+  parent: Domain.InventoryAggregate
+  name: IInventoryRepository
+  nameWithType: IInventoryRepository
+  fullName: Domain.InventoryAggregate.IInventoryRepository
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DateOnly
+  isExternal: true
+  name: DateOnly
+  nameWithType: DateOnly
+  fullName: DateOnly
+- uid: Domain.InventoryAggregate.ItemType
+  commentId: T:Domain.InventoryAggregate.ItemType
+  parent: Domain.InventoryAggregate
+  name: ItemType
+  nameWithType: ItemType
+  fullName: Domain.InventoryAggregate.ItemType
+- uid: Domain.InventoryAggregate
+  commentId: N:Domain.InventoryAggregate
+  name: Domain.InventoryAggregate
+  nameWithType: Domain.InventoryAggregate
+  fullName: Domain.InventoryAggregate
+- uid: Domain.Services.Commands.AddItemCommand.RunAsync*
+  commentId: Overload:Domain.Services.Commands.AddItemCommand.RunAsync
+  name: RunAsync
+  nameWithType: AddItemCommand.RunAsync
+  fullName: Domain.Services.Commands.AddItemCommand.RunAsync
+- uid: Task{Domain.InventoryAggregate.Entities.Item}
+  commentId: '!:Task{Domain.InventoryAggregate.Entities.Item}'
+  definition: Task`1
+  name: Task<Item>
+  nameWithType: Task<Item>
+  fullName: Task<Domain.InventoryAggregate.Entities.Item>
+  nameWithType.vb: Task(Of Item)
+  fullName.vb: Task(Of Domain.InventoryAggregate.Entities.Item)
+  name.vb: Task(Of Item)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Domain.InventoryAggregate.Entities.Item
+    name: Item
+    nameWithType: Item
+    fullName: Domain.InventoryAggregate.Entities.Item
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Domain.InventoryAggregate.Entities.Item
+    name: Item
+    nameWithType: Item
+    fullName: Domain.InventoryAggregate.Entities.Item
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

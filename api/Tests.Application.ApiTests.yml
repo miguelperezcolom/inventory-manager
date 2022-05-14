@@ -1,0 +1,205 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Application.ApiTests
+  commentId: T:Tests.Application.ApiTests
+  id: ApiTests
+  parent: Tests.Application
+  children:
+  - Tests.Application.ApiTests.api_delete_item_removed
+  - Tests.Application.ApiTests.api_get_item_returned
+  - Tests.Application.ApiTests.api_get_items_returned
+  - Tests.Application.ApiTests.api_post_item_created
+  langs:
+  - csharp
+  - vb
+  name: ApiTests
+  nameWithType: ApiTests
+  fullName: Tests.Application.ApiTests
+  type: Class
+  source:
+    remote:
+      path: Tests/Application/ApiTests.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: ApiTests
+    path: ../Tests/Application/ApiTests.cs
+    startLine: 16
+  assemblies:
+  - Tests
+  namespace: Tests.Application
+  syntax:
+    content: 'public class ApiTests : object'
+    content.vb: >-
+      Public Class ApiTests
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Tests.Application.ApiTests.api_post_item_created
+  commentId: M:Tests.Application.ApiTests.api_post_item_created
+  id: api_post_item_created
+  parent: Tests.Application.ApiTests
+  langs:
+  - csharp
+  - vb
+  name: api_post_item_created()
+  nameWithType: ApiTests.api_post_item_created()
+  fullName: Tests.Application.ApiTests.api_post_item_created()
+  type: Method
+  source:
+    remote:
+      path: Tests/Application/ApiTests.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: api_post_item_created
+    path: ../Tests/Application/ApiTests.cs
+    startLine: 19
+  assemblies:
+  - Tests
+  namespace: Tests.Application
+  syntax:
+    content: public async Task api_post_item_created()
+    return:
+      type: Task
+    content.vb: Public Function api_post_item_created As Task
+  overload: Tests.Application.ApiTests.api_post_item_created*
+  modifiers.csharp:
+  - public
+  - async
+  modifiers.vb:
+  - Public
+- uid: Tests.Application.ApiTests.api_get_items_returned
+  commentId: M:Tests.Application.ApiTests.api_get_items_returned
+  id: api_get_items_returned
+  parent: Tests.Application.ApiTests
+  langs:
+  - csharp
+  - vb
+  name: api_get_items_returned()
+  nameWithType: ApiTests.api_get_items_returned()
+  fullName: Tests.Application.ApiTests.api_get_items_returned()
+  type: Method
+  source:
+    remote:
+      path: Tests/Application/ApiTests.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: api_get_items_returned
+    path: ../Tests/Application/ApiTests.cs
+    startLine: 45
+  assemblies:
+  - Tests
+  namespace: Tests.Application
+  syntax:
+    content: public async Task api_get_items_returned()
+    return:
+      type: Task
+    content.vb: Public Function api_get_items_returned As Task
+  overload: Tests.Application.ApiTests.api_get_items_returned*
+  modifiers.csharp:
+  - public
+  - async
+  modifiers.vb:
+  - Public
+- uid: Tests.Application.ApiTests.api_get_item_returned
+  commentId: M:Tests.Application.ApiTests.api_get_item_returned
+  id: api_get_item_returned
+  parent: Tests.Application.ApiTests
+  langs:
+  - csharp
+  - vb
+  name: api_get_item_returned()
+  nameWithType: ApiTests.api_get_item_returned()
+  fullName: Tests.Application.ApiTests.api_get_item_returned()
+  type: Method
+  source:
+    remote:
+      path: Tests/Application/ApiTests.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: api_get_item_returned
+    path: ../Tests/Application/ApiTests.cs
+    startLine: 83
+  assemblies:
+  - Tests
+  namespace: Tests.Application
+  syntax:
+    content: public async Task api_get_item_returned()
+    return:
+      type: Task
+    content.vb: Public Function api_get_item_returned As Task
+  overload: Tests.Application.ApiTests.api_get_item_returned*
+  modifiers.csharp:
+  - public
+  - async
+  modifiers.vb:
+  - Public
+- uid: Tests.Application.ApiTests.api_delete_item_removed
+  commentId: M:Tests.Application.ApiTests.api_delete_item_removed
+  id: api_delete_item_removed
+  parent: Tests.Application.ApiTests
+  langs:
+  - csharp
+  - vb
+  name: api_delete_item_removed()
+  nameWithType: ApiTests.api_delete_item_removed()
+  fullName: Tests.Application.ApiTests.api_delete_item_removed()
+  type: Method
+  source:
+    remote:
+      path: Tests/Application/ApiTests.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: api_delete_item_removed
+    path: ../Tests/Application/ApiTests.cs
+    startLine: 110
+  assemblies:
+  - Tests
+  namespace: Tests.Application
+  syntax:
+    content: public async Task api_delete_item_removed()
+    return:
+      type: Task
+    content.vb: Public Function api_delete_item_removed As Task
+  overload: Tests.Application.ApiTests.api_delete_item_removed*
+  modifiers.csharp:
+  - public
+  - async
+  modifiers.vb:
+  - Public
+references:
+- uid: Tests.Application
+  commentId: N:Tests.Application
+  name: Tests.Application
+  nameWithType: Tests.Application
+  fullName: Tests.Application
+- uid: Tests.Application.ApiTests.api_post_item_created*
+  commentId: Overload:Tests.Application.ApiTests.api_post_item_created
+  name: api_post_item_created
+  nameWithType: ApiTests.api_post_item_created
+  fullName: Tests.Application.ApiTests.api_post_item_created
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Tests.Application.ApiTests.api_get_items_returned*
+  commentId: Overload:Tests.Application.ApiTests.api_get_items_returned
+  name: api_get_items_returned
+  nameWithType: ApiTests.api_get_items_returned
+  fullName: Tests.Application.ApiTests.api_get_items_returned
+- uid: Tests.Application.ApiTests.api_get_item_returned*
+  commentId: Overload:Tests.Application.ApiTests.api_get_item_returned
+  name: api_get_item_returned
+  nameWithType: ApiTests.api_get_item_returned
+  fullName: Tests.Application.ApiTests.api_get_item_returned
+- uid: Tests.Application.ApiTests.api_delete_item_removed*
+  commentId: Overload:Tests.Application.ApiTests.api_delete_item_removed
+  name: api_delete_item_removed
+  nameWithType: ApiTests.api_delete_item_removed
+  fullName: Tests.Application.ApiTests.api_delete_item_removed

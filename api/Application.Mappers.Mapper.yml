@@ -1,0 +1,271 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Mappers.Mapper
+  commentId: T:Application.Mappers.Mapper
+  id: Mapper
+  parent: Application.Mappers
+  children:
+  - Application.Mappers.Mapper.MapToModel(Domain.InventoryAggregate.Entities.Item)
+  - Application.Mappers.Mapper.MapToModel(IList{Domain.InventoryAggregate.Entities.Item})
+  langs:
+  - csharp
+  - vb
+  name: Mapper
+  nameWithType: Mapper
+  fullName: Application.Mappers.Mapper
+  type: Class
+  source:
+    remote:
+      path: Application/Mappers/Mapper.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Mapper
+    path: ../Application/Mappers/Mapper.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Mappers
+  syntax:
+    content: 'public static class Mapper : object'
+    content.vb: >-
+      Public Module Mapper
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Application.Mappers.Mapper.MapToModel(Domain.InventoryAggregate.Entities.Item)
+  commentId: M:Application.Mappers.Mapper.MapToModel(Domain.InventoryAggregate.Entities.Item)
+  id: MapToModel(Domain.InventoryAggregate.Entities.Item)
+  parent: Application.Mappers.Mapper
+  langs:
+  - csharp
+  - vb
+  name: MapToModel(Item)
+  nameWithType: Mapper.MapToModel(Item)
+  fullName: Application.Mappers.Mapper.MapToModel(Domain.InventoryAggregate.Entities.Item)
+  type: Method
+  source:
+    remote:
+      path: Application/Mappers/Mapper.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: MapToModel
+    path: ../Application/Mappers/Mapper.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Mappers
+  syntax:
+    content: public static Item MapToModel(Item item)
+    parameters:
+    - id: item
+      type: Domain.InventoryAggregate.Entities.Item
+    return:
+      type: Application.Model.Item
+    content.vb: Public Shared Function MapToModel(item As Item) As Item
+  overload: Application.Mappers.Mapper.MapToModel*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Application.Mappers.Mapper.MapToModel(IList{Domain.InventoryAggregate.Entities.Item})
+  commentId: M:Application.Mappers.Mapper.MapToModel(IList{Domain.InventoryAggregate.Entities.Item})
+  id: MapToModel(IList{Domain.InventoryAggregate.Entities.Item})
+  parent: Application.Mappers.Mapper
+  langs:
+  - csharp
+  - vb
+  name: MapToModel(IList<Item>)
+  nameWithType: Mapper.MapToModel(IList<Item>)
+  fullName: Application.Mappers.Mapper.MapToModel(IList<Domain.InventoryAggregate.Entities.Item>)
+  type: Method
+  source:
+    remote:
+      path: Application/Mappers/Mapper.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: MapToModel
+    path: ../Application/Mappers/Mapper.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.Mappers
+  syntax:
+    content: public static IList<Item> MapToModel(IList<Item> items)
+    parameters:
+    - id: items
+      type: IList{Domain.InventoryAggregate.Entities.Item}
+    return:
+      type: IList{Application.Model.Item}
+    content.vb: Public Shared Function MapToModel(items As IList(Of Item)) As IList(Of Item)
+  overload: Application.Mappers.Mapper.MapToModel*
+  nameWithType.vb: Mapper.MapToModel(IList(Of Item))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Application.Mappers.Mapper.MapToModel(IList(Of Domain.InventoryAggregate.Entities.Item))
+  name.vb: MapToModel(IList(Of Item))
+references:
+- uid: Application.Mappers
+  commentId: N:Application.Mappers
+  name: Application.Mappers
+  nameWithType: Application.Mappers
+  fullName: Application.Mappers
+- uid: Application.Mappers.Mapper.MapToModel*
+  commentId: Overload:Application.Mappers.Mapper.MapToModel
+  name: MapToModel
+  nameWithType: Mapper.MapToModel
+  fullName: Application.Mappers.Mapper.MapToModel
+- uid: Domain.InventoryAggregate.Entities.Item
+  commentId: T:Domain.InventoryAggregate.Entities.Item
+  parent: Domain.InventoryAggregate.Entities
+  name: Item
+  nameWithType: Item
+  fullName: Domain.InventoryAggregate.Entities.Item
+- uid: Application.Model.Item
+  commentId: T:Application.Model.Item
+  parent: Application.Model
+  name: Item
+  nameWithType: Item
+  fullName: Application.Model.Item
+- uid: Domain.InventoryAggregate.Entities
+  commentId: N:Domain.InventoryAggregate.Entities
+  name: Domain.InventoryAggregate.Entities
+  nameWithType: Domain.InventoryAggregate.Entities
+  fullName: Domain.InventoryAggregate.Entities
+- uid: Application.Model
+  commentId: N:Application.Model
+  name: Application.Model
+  nameWithType: Application.Model
+  fullName: Application.Model
+- uid: IList{Domain.InventoryAggregate.Entities.Item}
+  commentId: '!:IList{Domain.InventoryAggregate.Entities.Item}'
+  definition: IList`1
+  name: IList<Item>
+  nameWithType: IList<Item>
+  fullName: IList<Domain.InventoryAggregate.Entities.Item>
+  nameWithType.vb: IList(Of Item)
+  fullName.vb: IList(Of Domain.InventoryAggregate.Entities.Item)
+  name.vb: IList(Of Item)
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Domain.InventoryAggregate.Entities.Item
+    name: Item
+    nameWithType: Item
+    fullName: Domain.InventoryAggregate.Entities.Item
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Domain.InventoryAggregate.Entities.Item
+    name: Item
+    nameWithType: Item
+    fullName: Domain.InventoryAggregate.Entities.Item
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IList{Application.Model.Item}
+  commentId: '!:IList{Application.Model.Item}'
+  definition: IList`1
+  name: IList<Item>
+  nameWithType: IList<Item>
+  fullName: IList<Application.Model.Item>
+  nameWithType.vb: IList(Of Item)
+  fullName.vb: IList(Of Application.Model.Item)
+  name.vb: IList(Of Item)
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Application.Model.Item
+    name: Item
+    nameWithType: Item
+    fullName: Application.Model.Item
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Application.Model.Item
+    name: Item
+    nameWithType: Item
+    fullName: Application.Model.Item
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IList`1
+  isExternal: true
+  name: IList<>
+  nameWithType: IList<>
+  fullName: IList<>
+  nameWithType.vb: IList(Of )
+  fullName.vb: IList(Of )
+  name.vb: IList(Of )
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

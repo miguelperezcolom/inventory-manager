@@ -1,0 +1,225 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.InMemoryInventoryRepository
+  commentId: T:Infrastructure.InMemoryInventoryRepository
+  id: InMemoryInventoryRepository
+  parent: Infrastructure
+  children:
+  - Infrastructure.InMemoryInventoryRepository.Load
+  - Infrastructure.InMemoryInventoryRepository.Save(Domain.InventoryAggregate.Entities.Inventory)
+  langs:
+  - csharp
+  - vb
+  name: InMemoryInventoryRepository
+  nameWithType: InMemoryInventoryRepository
+  fullName: Infrastructure.InMemoryInventoryRepository
+  type: Class
+  source:
+    remote:
+      path: Infrastructure/InMemoryInventoryRepository.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: InMemoryInventoryRepository
+    path: ../Infrastructure/InMemoryInventoryRepository.cs
+    startLine: 8
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure
+  summary: "\nIn memory implementation of the inventory repository\n"
+  example: []
+  syntax:
+    content: 'public class InMemoryInventoryRepository : object, IInventoryRepository'
+    content.vb: >-
+      Public Class InMemoryInventoryRepository
+          Inherits Object
+          Implements IInventoryRepository
+  inheritance:
+  - System.Object
+  implements:
+  - Domain.InventoryAggregate.IInventoryRepository
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Infrastructure.InMemoryInventoryRepository.Save(Domain.InventoryAggregate.Entities.Inventory)
+  commentId: M:Infrastructure.InMemoryInventoryRepository.Save(Domain.InventoryAggregate.Entities.Inventory)
+  id: Save(Domain.InventoryAggregate.Entities.Inventory)
+  parent: Infrastructure.InMemoryInventoryRepository
+  langs:
+  - csharp
+  - vb
+  name: Save(Inventory)
+  nameWithType: InMemoryInventoryRepository.Save(Inventory)
+  fullName: Infrastructure.InMemoryInventoryRepository.Save(Domain.InventoryAggregate.Entities.Inventory)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/InMemoryInventoryRepository.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Save
+    path: ../Infrastructure/InMemoryInventoryRepository.cs
+    startLine: 18
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure
+  summary: "\nSave the inventory\n"
+  example: []
+  syntax:
+    content: public Inventory Save(Inventory inventory)
+    parameters:
+    - id: inventory
+      type: Domain.InventoryAggregate.Entities.Inventory
+      description: The inventory to be saved
+    return:
+      type: Domain.InventoryAggregate.Entities.Inventory
+      description: The saved inventory
+    content.vb: Public Function Save(inventory As Inventory) As Inventory
+  overload: Infrastructure.InMemoryInventoryRepository.Save*
+  implements:
+  - Domain.InventoryAggregate.IInventoryRepository.Save(Domain.InventoryAggregate.Entities.Inventory)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Infrastructure.InMemoryInventoryRepository.Load
+  commentId: M:Infrastructure.InMemoryInventoryRepository.Load
+  id: Load
+  parent: Infrastructure.InMemoryInventoryRepository
+  langs:
+  - csharp
+  - vb
+  name: Load()
+  nameWithType: InMemoryInventoryRepository.Load()
+  fullName: Infrastructure.InMemoryInventoryRepository.Load()
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/InMemoryInventoryRepository.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Load
+    path: ../Infrastructure/InMemoryInventoryRepository.cs
+    startLine: 28
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure
+  summary: "\nLoad the inventory\n"
+  example: []
+  syntax:
+    content: public Inventory Load()
+    return:
+      type: Domain.InventoryAggregate.Entities.Inventory
+      description: The inventory
+    content.vb: Public Function Load As Inventory
+  overload: Infrastructure.InMemoryInventoryRepository.Load*
+  implements:
+  - Domain.InventoryAggregate.IInventoryRepository.Load
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Infrastructure
+  commentId: N:Infrastructure
+  name: Infrastructure
+  nameWithType: Infrastructure
+  fullName: Infrastructure
+- uid: Domain.InventoryAggregate.IInventoryRepository
+  commentId: T:Domain.InventoryAggregate.IInventoryRepository
+  parent: Domain.InventoryAggregate
+  name: IInventoryRepository
+  nameWithType: IInventoryRepository
+  fullName: Domain.InventoryAggregate.IInventoryRepository
+- uid: Domain.InventoryAggregate
+  commentId: N:Domain.InventoryAggregate
+  name: Domain.InventoryAggregate
+  nameWithType: Domain.InventoryAggregate
+  fullName: Domain.InventoryAggregate
+- uid: Infrastructure.InMemoryInventoryRepository.Save*
+  commentId: Overload:Infrastructure.InMemoryInventoryRepository.Save
+  name: Save
+  nameWithType: InMemoryInventoryRepository.Save
+  fullName: Infrastructure.InMemoryInventoryRepository.Save
+- uid: Domain.InventoryAggregate.IInventoryRepository.Save(Domain.InventoryAggregate.Entities.Inventory)
+  commentId: M:Domain.InventoryAggregate.IInventoryRepository.Save(Domain.InventoryAggregate.Entities.Inventory)
+  parent: Domain.InventoryAggregate.IInventoryRepository
+  name: Save(Inventory)
+  nameWithType: IInventoryRepository.Save(Inventory)
+  fullName: Domain.InventoryAggregate.IInventoryRepository.Save(Domain.InventoryAggregate.Entities.Inventory)
+  spec.csharp:
+  - uid: Domain.InventoryAggregate.IInventoryRepository.Save(Domain.InventoryAggregate.Entities.Inventory)
+    name: Save
+    nameWithType: IInventoryRepository.Save
+    fullName: Domain.InventoryAggregate.IInventoryRepository.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Domain.InventoryAggregate.Entities.Inventory
+    name: Inventory
+    nameWithType: Inventory
+    fullName: Domain.InventoryAggregate.Entities.Inventory
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Domain.InventoryAggregate.IInventoryRepository.Save(Domain.InventoryAggregate.Entities.Inventory)
+    name: Save
+    nameWithType: IInventoryRepository.Save
+    fullName: Domain.InventoryAggregate.IInventoryRepository.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Domain.InventoryAggregate.Entities.Inventory
+    name: Inventory
+    nameWithType: Inventory
+    fullName: Domain.InventoryAggregate.Entities.Inventory
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Domain.InventoryAggregate.Entities.Inventory
+  commentId: T:Domain.InventoryAggregate.Entities.Inventory
+  parent: Domain.InventoryAggregate.Entities
+  name: Inventory
+  nameWithType: Inventory
+  fullName: Domain.InventoryAggregate.Entities.Inventory
+- uid: Domain.InventoryAggregate.Entities
+  commentId: N:Domain.InventoryAggregate.Entities
+  name: Domain.InventoryAggregate.Entities
+  nameWithType: Domain.InventoryAggregate.Entities
+  fullName: Domain.InventoryAggregate.Entities
+- uid: Infrastructure.InMemoryInventoryRepository.Load*
+  commentId: Overload:Infrastructure.InMemoryInventoryRepository.Load
+  name: Load
+  nameWithType: InMemoryInventoryRepository.Load
+  fullName: Infrastructure.InMemoryInventoryRepository.Load
+- uid: Domain.InventoryAggregate.IInventoryRepository.Load
+  commentId: M:Domain.InventoryAggregate.IInventoryRepository.Load
+  parent: Domain.InventoryAggregate.IInventoryRepository
+  name: Load()
+  nameWithType: IInventoryRepository.Load()
+  fullName: Domain.InventoryAggregate.IInventoryRepository.Load()
+  spec.csharp:
+  - uid: Domain.InventoryAggregate.IInventoryRepository.Load
+    name: Load
+    nameWithType: IInventoryRepository.Load
+    fullName: Domain.InventoryAggregate.IInventoryRepository.Load
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Domain.InventoryAggregate.IInventoryRepository.Load
+    name: Load
+    nameWithType: IInventoryRepository.Load
+    fullName: Domain.InventoryAggregate.IInventoryRepository.Load
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Model
+  commentId: N:Application.Model
+  id: Application.Model
+  children:
+  - Application.Model.Item
+  langs:
+  - csharp
+  - vb
+  name: Application.Model
+  nameWithType: Application.Model
+  fullName: Application.Model
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Model.Item
+  commentId: T:Application.Model.Item
+  parent: Application.Model
+  name: Item
+  nameWithType: Item
+  fullName: Application.Model.Item
+- uid: Application.Model
+  commentId: N:Application.Model
+  name: Application.Model
+  nameWithType: Application.Model
+  fullName: Application.Model

@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.InventoryAggregate
+  commentId: N:Domain.InventoryAggregate
+  id: Domain.InventoryAggregate
+  children:
+  - Domain.InventoryAggregate.IInventoryRepository
+  - Domain.InventoryAggregate.ItemName
+  - Domain.InventoryAggregate.ItemType
+  langs:
+  - csharp
+  - vb
+  name: Domain.InventoryAggregate
+  nameWithType: Domain.InventoryAggregate
+  fullName: Domain.InventoryAggregate
+  type: Namespace
+  assemblies:
+  - Domain
+references:
+- uid: Domain.InventoryAggregate.ItemType
+  commentId: T:Domain.InventoryAggregate.ItemType
+  parent: Domain.InventoryAggregate
+  name: ItemType
+  nameWithType: ItemType
+  fullName: Domain.InventoryAggregate.ItemType
+- uid: Domain.InventoryAggregate.IInventoryRepository
+  commentId: T:Domain.InventoryAggregate.IInventoryRepository
+  parent: Domain.InventoryAggregate
+  name: IInventoryRepository
+  nameWithType: IInventoryRepository
+  fullName: Domain.InventoryAggregate.IInventoryRepository
+- uid: Domain.InventoryAggregate.ItemName
+  commentId: T:Domain.InventoryAggregate.ItemName
+  name: ItemName
+  nameWithType: ItemName
+  fullName: Domain.InventoryAggregate.ItemName
+- uid: Domain.InventoryAggregate
+  commentId: N:Domain.InventoryAggregate
+  name: Domain.InventoryAggregate
+  nameWithType: Domain.InventoryAggregate
+  fullName: Domain.InventoryAggregate

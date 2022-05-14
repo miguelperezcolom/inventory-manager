@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DI
+  commentId: N:Application.DI
+  id: Application.DI
+  children:
+  - Application.DI.DIExtension
+  langs:
+  - csharp
+  - vb
+  name: Application.DI
+  nameWithType: Application.DI
+  fullName: Application.DI
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DI.DIExtension
+  commentId: T:Application.DI.DIExtension
+  name: DIExtension
+  nameWithType: DIExtension
+  fullName: Application.DI.DIExtension

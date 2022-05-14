@@ -1,0 +1,138 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Services.Events.ItemExpired
+  commentId: T:Domain.Services.Events.ItemExpired
+  id: ItemExpired
+  parent: Domain.Services.Events
+  children:
+  - Domain.Services.Events.ItemExpired.#ctor(System.String)
+  - Domain.Services.Events.ItemExpired.ItemName
+  langs:
+  - csharp
+  - vb
+  name: ItemExpired
+  nameWithType: ItemExpired
+  fullName: Domain.Services.Events.ItemExpired
+  type: Class
+  source:
+    remote:
+      path: Domain/Services/Events/DomainEvents/ItemExpired.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: ItemExpired
+    path: ../Domain/Services/Events/DomainEvents/ItemExpired.cs
+    startLine: 2
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Events
+  syntax:
+    content: 'public class ItemExpired : Event'
+    content.vb: >-
+      Public Class ItemExpired
+          Inherits
+
+           Event
+  inheritance:
+  - System.Object
+  - Domain.Services.Events.Event
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Domain.Services.Events.ItemExpired.#ctor(System.String)
+  commentId: M:Domain.Services.Events.ItemExpired.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Domain.Services.Events.ItemExpired
+  langs:
+  - csharp
+  - vb
+  name: ItemExpired(String)
+  nameWithType: ItemExpired.ItemExpired(String)
+  fullName: Domain.Services.Events.ItemExpired.ItemExpired(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Services/Events/DomainEvents/ItemExpired.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: .ctor
+    path: ../Domain/Services/Events/DomainEvents/ItemExpired.cs
+    startLine: 4
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Events
+  syntax:
+    content: public ItemExpired(string itemName)
+    parameters:
+    - id: itemName
+      type: System.String
+    content.vb: Public Sub New(itemName As String)
+  overload: Domain.Services.Events.ItemExpired.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Domain.Services.Events.ItemExpired.ItemName
+  commentId: P:Domain.Services.Events.ItemExpired.ItemName
+  id: ItemName
+  parent: Domain.Services.Events.ItemExpired
+  langs:
+  - csharp
+  - vb
+  name: ItemName
+  nameWithType: ItemExpired.ItemName
+  fullName: Domain.Services.Events.ItemExpired.ItemName
+  type: Property
+  source:
+    remote:
+      path: Domain/Services/Events/DomainEvents/ItemExpired.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: ItemName
+    path: ../Domain/Services/Events/DomainEvents/ItemExpired.cs
+    startLine: 9
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Events
+  syntax:
+    content: public string ItemName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ItemName As String
+  overload: Domain.Services.Events.ItemExpired.ItemName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Domain.Services.Events
+  commentId: N:Domain.Services.Events
+  name: Domain.Services.Events
+  nameWithType: Domain.Services.Events
+  fullName: Domain.Services.Events
+- uid: Domain.Services.Events.Event
+  commentId: T:Domain.Services.Events.Event
+  parent: Domain.Services.Events
+  name: Event
+  nameWithType: Event
+  fullName: Domain.Services.Events.Event
+- uid: Domain.Services.Events.ItemExpired.#ctor*
+  commentId: Overload:Domain.Services.Events.ItemExpired.#ctor
+  name: ItemExpired
+  nameWithType: ItemExpired.ItemExpired
+  fullName: Domain.Services.Events.ItemExpired.ItemExpired
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Domain.Services.Events.ItemExpired.ItemName*
+  commentId: Overload:Domain.Services.Events.ItemExpired.ItemName
+  name: ItemName
+  nameWithType: ItemExpired.ItemName
+  fullName: Domain.Services.Events.ItemExpired.ItemName

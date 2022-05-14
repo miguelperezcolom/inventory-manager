@@ -1,0 +1,106 @@
+### YamlMime:TableOfContent
+- uid: Application.Controllers
+  name: Application.Controllers
+  items:
+  - uid: Application.Controllers.ItemsAPIController
+    name: ItemsAPIController
+- uid: Application.DI
+  name: Application.DI
+  items:
+  - uid: Application.DI.DIExtension
+    name: DIExtension
+- uid: Application.Jobs
+  name: Application.Jobs
+  items:
+  - uid: Application.Jobs.JobCreatorExtension
+    name: JobCreatorExtension
+- uid: Application.Mappers
+  name: Application.Mappers
+  items:
+  - uid: Application.Mappers.Mapper
+    name: Mapper
+- uid: Application.Model
+  name: Application.Model
+  items:
+  - uid: Application.Model.Item
+    name: Item
+- uid: Application.Validators
+  name: Application.Validators
+  items:
+  - uid: Application.Validators.ItemValidator
+    name: ItemValidator
+- uid: Domain.Exceptions
+  name: Domain.Exceptions
+  items:
+  - uid: Domain.Exceptions.AlreadyExistsException
+    name: AlreadyExistsException
+- uid: Domain.InventoryAggregate
+  name: Domain.InventoryAggregate
+  items:
+  - uid: Domain.InventoryAggregate.IInventoryRepository
+    name: IInventoryRepository
+  - uid: Domain.InventoryAggregate.ItemName
+    name: ItemName
+  - uid: Domain.InventoryAggregate.ItemType
+    name: ItemType
+- uid: Domain.InventoryAggregate.Entities
+  name: Domain.InventoryAggregate.Entities
+  items:
+  - uid: Domain.InventoryAggregate.Entities.Inventory
+    name: Inventory
+  - uid: Domain.InventoryAggregate.Entities.Item
+    name: Item
+- uid: Domain.Services.Commands
+  name: Domain.Services.Commands
+  items:
+  - uid: Domain.Services.Commands.AddItemCommand
+    name: AddItemCommand
+  - uid: Domain.Services.Commands.MarkAsExpiredCommand
+    name: MarkAsExpiredCommand
+  - uid: Domain.Services.Commands.RemoveItemCommand
+    name: RemoveItemCommand
+- uid: Domain.Services.Events
+  name: Domain.Services.Events
+  items:
+  - uid: Domain.Services.Events.Event
+    name: Event
+  - uid: Domain.Services.Events.IEventBus
+    name: IEventBus
+  - uid: Domain.Services.Events.ItemExpired
+    name: ItemExpired
+  - uid: Domain.Services.Events.ItemRemoved
+    name: ItemRemoved
+- uid: Domain.Services.Factories
+  name: Domain.Services.Factories
+  items:
+  - uid: Domain.Services.Factories.CommandFactory
+    name: CommandFactory
+- uid: Domain.Services.Queries
+  name: Domain.Services.Queries
+  items:
+  - uid: Domain.Services.Queries.GetItemQuery
+    name: GetItemQuery
+  - uid: Domain.Services.Queries.GetItemsQuery
+    name: GetItemsQuery
+- uid: Infrastructure
+  name: Infrastructure
+  items:
+  - uid: Infrastructure.InMemoryInventoryRepository
+    name: InMemoryInventoryRepository
+  - uid: Infrastructure.SimpleEventBus
+    name: SimpleEventBus
+- uid: Shared
+  name: Shared
+  items:
+  - uid: Shared.Class1
+    name: Class1
+- uid: Tests
+  name: Tests
+  items:
+  - uid: Tests.UnitTest1
+    name: UnitTest1
+- uid: Tests.Application
+  name: Tests.Application
+  items:
+  - uid: Tests.Application.ApiTests
+    name: ApiTests

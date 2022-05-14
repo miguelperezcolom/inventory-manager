@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.InventoryAggregate.ItemType
+  commentId: T:Domain.InventoryAggregate.ItemType
+  id: ItemType
+  parent: Domain.InventoryAggregate
+  children:
+  - Domain.InventoryAggregate.ItemType.Basic
+  - Domain.InventoryAggregate.ItemType.Box
+  - Domain.InventoryAggregate.ItemType.Document
+  langs:
+  - csharp
+  - vb
+  name: ItemType
+  nameWithType: ItemType
+  fullName: Domain.InventoryAggregate.ItemType
+  type: Enum
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/Enums/ItemType.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: ItemType
+    path: ../Domain/Aggregates/InventoryAggregate/Enums/ItemType.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate
+  summary: "\nPossible item types\n"
+  example: []
+  syntax:
+    content: 'public enum ItemType : int'
+    content.vb: Public Enum ItemType As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Domain.InventoryAggregate.ItemType.Basic
+  commentId: F:Domain.InventoryAggregate.ItemType.Basic
+  id: Basic
+  parent: Domain.InventoryAggregate.ItemType
+  langs:
+  - csharp
+  - vb
+  name: Basic
+  nameWithType: ItemType.Basic
+  fullName: Domain.InventoryAggregate.ItemType.Basic
+  type: Field
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/Enums/ItemType.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Basic
+    path: ../Domain/Aggregates/InventoryAggregate/Enums/ItemType.cs
+    startLine: 7
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate
+  syntax:
+    content: Basic = 0
+    return:
+      type: Domain.InventoryAggregate.ItemType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Domain.InventoryAggregate.ItemType.Box
+  commentId: F:Domain.InventoryAggregate.ItemType.Box
+  id: Box
+  parent: Domain.InventoryAggregate.ItemType
+  langs:
+  - csharp
+  - vb
+  name: Box
+  nameWithType: ItemType.Box
+  fullName: Domain.InventoryAggregate.ItemType.Box
+  type: Field
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/Enums/ItemType.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Box
+    path: ../Domain/Aggregates/InventoryAggregate/Enums/ItemType.cs
+    startLine: 7
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate
+  syntax:
+    content: Box = 1
+    return:
+      type: Domain.InventoryAggregate.ItemType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Domain.InventoryAggregate.ItemType.Document
+  commentId: F:Domain.InventoryAggregate.ItemType.Document
+  id: Document
+  parent: Domain.InventoryAggregate.ItemType
+  langs:
+  - csharp
+  - vb
+  name: Document
+  nameWithType: ItemType.Document
+  fullName: Domain.InventoryAggregate.ItemType.Document
+  type: Field
+  source:
+    remote:
+      path: Domain/Aggregates/InventoryAggregate/Enums/ItemType.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: Document
+    path: ../Domain/Aggregates/InventoryAggregate/Enums/ItemType.cs
+    startLine: 7
+  assemblies:
+  - Domain
+  namespace: Domain.InventoryAggregate
+  syntax:
+    content: Document = 2
+    return:
+      type: Domain.InventoryAggregate.ItemType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Domain.InventoryAggregate
+  commentId: N:Domain.InventoryAggregate
+  name: Domain.InventoryAggregate
+  nameWithType: Domain.InventoryAggregate
+  fullName: Domain.InventoryAggregate
+- uid: Domain.InventoryAggregate.ItemType
+  commentId: T:Domain.InventoryAggregate.ItemType
+  parent: Domain.InventoryAggregate
+  name: ItemType
+  nameWithType: ItemType
+  fullName: Domain.InventoryAggregate.ItemType

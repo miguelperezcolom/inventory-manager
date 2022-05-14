@@ -1,0 +1,97 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DI.DIExtension
+  commentId: T:Application.DI.DIExtension
+  id: DIExtension
+  parent: Application.DI
+  children:
+  - Application.DI.DIExtension.AddDI(IServiceCollection)
+  langs:
+  - csharp
+  - vb
+  name: DIExtension
+  nameWithType: DIExtension
+  fullName: Application.DI.DIExtension
+  type: Class
+  source:
+    remote:
+      path: Application/DI/DIExtension.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: DIExtension
+    path: ../Application/DI/DIExtension.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.DI
+  syntax:
+    content: 'public static class DIExtension : object'
+    content.vb: >-
+      Public Module DIExtension
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Application.DI.DIExtension.AddDI(IServiceCollection)
+  commentId: M:Application.DI.DIExtension.AddDI(IServiceCollection)
+  id: AddDI(IServiceCollection)
+  isExtensionMethod: true
+  parent: Application.DI.DIExtension
+  langs:
+  - csharp
+  - vb
+  name: AddDI(IServiceCollection)
+  nameWithType: DIExtension.AddDI(IServiceCollection)
+  fullName: Application.DI.DIExtension.AddDI(IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: Application/DI/DIExtension.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: AddDI
+    path: ../Application/DI/DIExtension.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.DI
+  syntax:
+    content: public static IServiceCollection AddDI(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: IServiceCollection
+    return:
+      type: IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDI(services As IServiceCollection) As IServiceCollection
+  overload: Application.DI.DIExtension.AddDI*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Application.DI
+  commentId: N:Application.DI
+  name: Application.DI
+  nameWithType: Application.DI
+  fullName: Application.DI
+- uid: Application.DI.DIExtension.AddDI*
+  commentId: Overload:Application.DI.DIExtension.AddDI
+  name: AddDI
+  nameWithType: DIExtension.AddDI
+  fullName: Application.DI.DIExtension.AddDI
+- uid: IServiceCollection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: IServiceCollection

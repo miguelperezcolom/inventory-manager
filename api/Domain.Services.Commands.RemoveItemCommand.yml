@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Services.Commands.RemoveItemCommand
+  commentId: T:Domain.Services.Commands.RemoveItemCommand
+  id: RemoveItemCommand
+  parent: Domain.Services.Commands
+  children:
+  - Domain.Services.Commands.RemoveItemCommand.#ctor(Domain.InventoryAggregate.IInventoryRepository,Domain.Services.Events.IEventBus,System.String)
+  - Domain.Services.Commands.RemoveItemCommand.RunAsync
+  langs:
+  - csharp
+  - vb
+  name: RemoveItemCommand
+  nameWithType: RemoveItemCommand
+  fullName: Domain.Services.Commands.RemoveItemCommand
+  type: Class
+  source:
+    remote:
+      path: Domain/Services/Commands/RemoveItemCommand.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: RemoveItemCommand
+    path: ../Domain/Services/Commands/RemoveItemCommand.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Commands
+  syntax:
+    content: 'public class RemoveItemCommand : object'
+    content.vb: >-
+      Public Class RemoveItemCommand
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Domain.Services.Commands.RemoveItemCommand.#ctor(Domain.InventoryAggregate.IInventoryRepository,Domain.Services.Events.IEventBus,System.String)
+  commentId: M:Domain.Services.Commands.RemoveItemCommand.#ctor(Domain.InventoryAggregate.IInventoryRepository,Domain.Services.Events.IEventBus,System.String)
+  id: '#ctor(Domain.InventoryAggregate.IInventoryRepository,Domain.Services.Events.IEventBus,System.String)'
+  parent: Domain.Services.Commands.RemoveItemCommand
+  langs:
+  - csharp
+  - vb
+  name: RemoveItemCommand(IInventoryRepository, IEventBus, String)
+  nameWithType: RemoveItemCommand.RemoveItemCommand(IInventoryRepository, IEventBus, String)
+  fullName: Domain.Services.Commands.RemoveItemCommand.RemoveItemCommand(Domain.InventoryAggregate.IInventoryRepository, Domain.Services.Events.IEventBus, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Services/Commands/RemoveItemCommand.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: .ctor
+    path: ../Domain/Services/Commands/RemoveItemCommand.cs
+    startLine: 12
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Commands
+  syntax:
+    content: public RemoveItemCommand(IInventoryRepository inventoryRepository, IEventBus eventBus, string name)
+    parameters:
+    - id: inventoryRepository
+      type: Domain.InventoryAggregate.IInventoryRepository
+    - id: eventBus
+      type: Domain.Services.Events.IEventBus
+    - id: name
+      type: System.String
+    content.vb: Public Sub New(inventoryRepository As IInventoryRepository, eventBus As IEventBus, name As String)
+  overload: Domain.Services.Commands.RemoveItemCommand.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Domain.Services.Commands.RemoveItemCommand.RunAsync
+  commentId: M:Domain.Services.Commands.RemoveItemCommand.RunAsync
+  id: RunAsync
+  parent: Domain.Services.Commands.RemoveItemCommand
+  langs:
+  - csharp
+  - vb
+  name: RunAsync()
+  nameWithType: RemoveItemCommand.RunAsync()
+  fullName: Domain.Services.Commands.RemoveItemCommand.RunAsync()
+  type: Method
+  source:
+    remote:
+      path: Domain/Services/Commands/RemoveItemCommand.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: RunAsync
+    path: ../Domain/Services/Commands/RemoveItemCommand.cs
+    startLine: 19
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Commands
+  syntax:
+    content: public async Task RunAsync()
+    return:
+      type: Task
+    content.vb: Public Function RunAsync As Task
+  overload: Domain.Services.Commands.RemoveItemCommand.RunAsync*
+  modifiers.csharp:
+  - public
+  - async
+  modifiers.vb:
+  - Public
+references:
+- uid: Domain.Services.Commands
+  commentId: N:Domain.Services.Commands
+  name: Domain.Services.Commands
+  nameWithType: Domain.Services.Commands
+  fullName: Domain.Services.Commands
+- uid: Domain.Services.Commands.RemoveItemCommand.#ctor*
+  commentId: Overload:Domain.Services.Commands.RemoveItemCommand.#ctor
+  name: RemoveItemCommand
+  nameWithType: RemoveItemCommand.RemoveItemCommand
+  fullName: Domain.Services.Commands.RemoveItemCommand.RemoveItemCommand
+- uid: Domain.InventoryAggregate.IInventoryRepository
+  commentId: T:Domain.InventoryAggregate.IInventoryRepository
+  parent: Domain.InventoryAggregate
+  name: IInventoryRepository
+  nameWithType: IInventoryRepository
+  fullName: Domain.InventoryAggregate.IInventoryRepository
+- uid: Domain.Services.Events.IEventBus
+  commentId: T:Domain.Services.Events.IEventBus
+  parent: Domain.Services.Events
+  name: IEventBus
+  nameWithType: IEventBus
+  fullName: Domain.Services.Events.IEventBus
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Domain.InventoryAggregate
+  commentId: N:Domain.InventoryAggregate
+  name: Domain.InventoryAggregate
+  nameWithType: Domain.InventoryAggregate
+  fullName: Domain.InventoryAggregate
+- uid: Domain.Services.Events
+  commentId: N:Domain.Services.Events
+  name: Domain.Services.Events
+  nameWithType: Domain.Services.Events
+  fullName: Domain.Services.Events
+- uid: Domain.Services.Commands.RemoveItemCommand.RunAsync*
+  commentId: Overload:Domain.Services.Commands.RemoveItemCommand.RunAsync
+  name: RunAsync
+  nameWithType: RemoveItemCommand.RunAsync
+  fullName: Domain.Services.Commands.RemoveItemCommand.RunAsync
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

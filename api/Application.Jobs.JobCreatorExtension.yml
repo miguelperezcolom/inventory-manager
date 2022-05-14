@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Jobs.JobCreatorExtension
+  commentId: T:Application.Jobs.JobCreatorExtension
+  id: JobCreatorExtension
+  parent: Application.Jobs
+  children:
+  - Application.Jobs.JobCreatorExtension.AddJobs(IApplicationBuilder)
+  - Application.Jobs.JobCreatorExtension.ExpireItems(Domain.Services.Factories.CommandFactory)
+  langs:
+  - csharp
+  - vb
+  name: JobCreatorExtension
+  nameWithType: JobCreatorExtension
+  fullName: Application.Jobs.JobCreatorExtension
+  type: Class
+  source:
+    remote:
+      path: Application/Jobs/JobCreatorExtension.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: JobCreatorExtension
+    path: ../Application/Jobs/JobCreatorExtension.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Jobs
+  syntax:
+    content: 'public static class JobCreatorExtension : object'
+    content.vb: >-
+      Public Module JobCreatorExtension
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Application.Jobs.JobCreatorExtension.AddJobs(IApplicationBuilder)
+  commentId: M:Application.Jobs.JobCreatorExtension.AddJobs(IApplicationBuilder)
+  id: AddJobs(IApplicationBuilder)
+  isExtensionMethod: true
+  parent: Application.Jobs.JobCreatorExtension
+  langs:
+  - csharp
+  - vb
+  name: AddJobs(IApplicationBuilder)
+  nameWithType: JobCreatorExtension.AddJobs(IApplicationBuilder)
+  fullName: Application.Jobs.JobCreatorExtension.AddJobs(IApplicationBuilder)
+  type: Method
+  source:
+    remote:
+      path: Application/Jobs/JobCreatorExtension.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: AddJobs
+    path: ../Application/Jobs/JobCreatorExtension.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Jobs
+  syntax:
+    content: public static IApplicationBuilder AddJobs(this IApplicationBuilder app)
+    parameters:
+    - id: app
+      type: IApplicationBuilder
+    return:
+      type: IApplicationBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddJobs(app As IApplicationBuilder) As IApplicationBuilder
+  overload: Application.Jobs.JobCreatorExtension.AddJobs*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Application.Jobs.JobCreatorExtension.ExpireItems(Domain.Services.Factories.CommandFactory)
+  commentId: M:Application.Jobs.JobCreatorExtension.ExpireItems(Domain.Services.Factories.CommandFactory)
+  id: ExpireItems(Domain.Services.Factories.CommandFactory)
+  parent: Application.Jobs.JobCreatorExtension
+  langs:
+  - csharp
+  - vb
+  name: ExpireItems(CommandFactory)
+  nameWithType: JobCreatorExtension.ExpireItems(CommandFactory)
+  fullName: Application.Jobs.JobCreatorExtension.ExpireItems(Domain.Services.Factories.CommandFactory)
+  type: Method
+  source:
+    remote:
+      path: Application/Jobs/JobCreatorExtension.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: ExpireItems
+    path: ../Application/Jobs/JobCreatorExtension.cs
+    startLine: 23
+  assemblies:
+  - Application
+  namespace: Application.Jobs
+  syntax:
+    content: public static void ExpireItems(CommandFactory commandFactory)
+    parameters:
+    - id: commandFactory
+      type: Domain.Services.Factories.CommandFactory
+    content.vb: Public Shared Sub ExpireItems(commandFactory As CommandFactory)
+  overload: Application.Jobs.JobCreatorExtension.ExpireItems*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Application.Jobs
+  commentId: N:Application.Jobs
+  name: Application.Jobs
+  nameWithType: Application.Jobs
+  fullName: Application.Jobs
+- uid: Application.Jobs.JobCreatorExtension.AddJobs*
+  commentId: Overload:Application.Jobs.JobCreatorExtension.AddJobs
+  name: AddJobs
+  nameWithType: JobCreatorExtension.AddJobs
+  fullName: Application.Jobs.JobCreatorExtension.AddJobs
+- uid: IApplicationBuilder
+  isExternal: true
+  name: IApplicationBuilder
+  nameWithType: IApplicationBuilder
+  fullName: IApplicationBuilder
+- uid: Application.Jobs.JobCreatorExtension.ExpireItems*
+  commentId: Overload:Application.Jobs.JobCreatorExtension.ExpireItems
+  name: ExpireItems
+  nameWithType: JobCreatorExtension.ExpireItems
+  fullName: Application.Jobs.JobCreatorExtension.ExpireItems
+- uid: Domain.Services.Factories.CommandFactory
+  commentId: T:Domain.Services.Factories.CommandFactory
+  parent: Domain.Services.Factories
+  name: CommandFactory
+  nameWithType: CommandFactory
+  fullName: Domain.Services.Factories.CommandFactory
+- uid: Domain.Services.Factories
+  commentId: N:Domain.Services.Factories
+  name: Domain.Services.Factories
+  nameWithType: Domain.Services.Factories
+  fullName: Domain.Services.Factories

@@ -1,0 +1,138 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Services.Events.ItemRemoved
+  commentId: T:Domain.Services.Events.ItemRemoved
+  id: ItemRemoved
+  parent: Domain.Services.Events
+  children:
+  - Domain.Services.Events.ItemRemoved.#ctor(System.String)
+  - Domain.Services.Events.ItemRemoved.ItemName
+  langs:
+  - csharp
+  - vb
+  name: ItemRemoved
+  nameWithType: ItemRemoved
+  fullName: Domain.Services.Events.ItemRemoved
+  type: Class
+  source:
+    remote:
+      path: Domain/Services/Events/DomainEvents/ItemRemoved.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: ItemRemoved
+    path: ../Domain/Services/Events/DomainEvents/ItemRemoved.cs
+    startLine: 2
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Events
+  syntax:
+    content: 'public class ItemRemoved : Event'
+    content.vb: >-
+      Public Class ItemRemoved
+          Inherits
+
+           Event
+  inheritance:
+  - System.Object
+  - Domain.Services.Events.Event
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Domain.Services.Events.ItemRemoved.#ctor(System.String)
+  commentId: M:Domain.Services.Events.ItemRemoved.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Domain.Services.Events.ItemRemoved
+  langs:
+  - csharp
+  - vb
+  name: ItemRemoved(String)
+  nameWithType: ItemRemoved.ItemRemoved(String)
+  fullName: Domain.Services.Events.ItemRemoved.ItemRemoved(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Services/Events/DomainEvents/ItemRemoved.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: .ctor
+    path: ../Domain/Services/Events/DomainEvents/ItemRemoved.cs
+    startLine: 4
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Events
+  syntax:
+    content: public ItemRemoved(string itemName)
+    parameters:
+    - id: itemName
+      type: System.String
+    content.vb: Public Sub New(itemName As String)
+  overload: Domain.Services.Events.ItemRemoved.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Domain.Services.Events.ItemRemoved.ItemName
+  commentId: P:Domain.Services.Events.ItemRemoved.ItemName
+  id: ItemName
+  parent: Domain.Services.Events.ItemRemoved
+  langs:
+  - csharp
+  - vb
+  name: ItemName
+  nameWithType: ItemRemoved.ItemName
+  fullName: Domain.Services.Events.ItemRemoved.ItemName
+  type: Property
+  source:
+    remote:
+      path: Domain/Services/Events/DomainEvents/ItemRemoved.cs
+      branch: master
+      repo: https://github.com/miguelperezcolom/inventory-manager
+    id: ItemName
+    path: ../Domain/Services/Events/DomainEvents/ItemRemoved.cs
+    startLine: 9
+  assemblies:
+  - Domain
+  namespace: Domain.Services.Events
+  syntax:
+    content: public string ItemName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ItemName As String
+  overload: Domain.Services.Events.ItemRemoved.ItemName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Domain.Services.Events
+  commentId: N:Domain.Services.Events
+  name: Domain.Services.Events
+  nameWithType: Domain.Services.Events
+  fullName: Domain.Services.Events
+- uid: Domain.Services.Events.Event
+  commentId: T:Domain.Services.Events.Event
+  parent: Domain.Services.Events
+  name: Event
+  nameWithType: Event
+  fullName: Domain.Services.Events.Event
+- uid: Domain.Services.Events.ItemRemoved.#ctor*
+  commentId: Overload:Domain.Services.Events.ItemRemoved.#ctor
+  name: ItemRemoved
+  nameWithType: ItemRemoved.ItemRemoved
+  fullName: Domain.Services.Events.ItemRemoved.ItemRemoved
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Domain.Services.Events.ItemRemoved.ItemName*
+  commentId: Overload:Domain.Services.Events.ItemRemoved.ItemName
+  name: ItemName
+  nameWithType: ItemRemoved.ItemName
+  fullName: Domain.Services.Events.ItemRemoved.ItemName

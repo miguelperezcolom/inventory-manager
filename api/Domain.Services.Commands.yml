@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Services.Commands
+  commentId: N:Domain.Services.Commands
+  id: Domain.Services.Commands
+  children:
+  - Domain.Services.Commands.AddItemCommand
+  - Domain.Services.Commands.MarkAsExpiredCommand
+  - Domain.Services.Commands.RemoveItemCommand
+  langs:
+  - csharp
+  - vb
+  name: Domain.Services.Commands
+  nameWithType: Domain.Services.Commands
+  fullName: Domain.Services.Commands
+  type: Namespace
+  assemblies:
+  - Domain
+references:
+- uid: Domain.Services.Commands.AddItemCommand
+  commentId: T:Domain.Services.Commands.AddItemCommand
+  parent: Domain.Services.Commands
+  name: AddItemCommand
+  nameWithType: AddItemCommand
+  fullName: Domain.Services.Commands.AddItemCommand
+- uid: Domain.Services.Commands.MarkAsExpiredCommand
+  commentId: T:Domain.Services.Commands.MarkAsExpiredCommand
+  parent: Domain.Services.Commands
+  name: MarkAsExpiredCommand
+  nameWithType: MarkAsExpiredCommand
+  fullName: Domain.Services.Commands.MarkAsExpiredCommand
+- uid: Domain.Services.Commands.RemoveItemCommand
+  commentId: T:Domain.Services.Commands.RemoveItemCommand
+  parent: Domain.Services.Commands
+  name: RemoveItemCommand
+  nameWithType: RemoveItemCommand
+  fullName: Domain.Services.Commands.RemoveItemCommand
+- uid: Domain.Services.Commands
+  commentId: N:Domain.Services.Commands
+  name: Domain.Services.Commands
+  nameWithType: Domain.Services.Commands
+  fullName: Domain.Services.Commands
