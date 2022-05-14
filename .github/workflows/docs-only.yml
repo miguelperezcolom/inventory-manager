@@ -21,6 +21,12 @@ jobs:
         with:
           args: install docfx
 
+      - name: Pwd
+        run: pwd
+        
+      - name: Ls
+        run: ls
+
       - name: Create Docs dir
         run: mkdir docs
         
