@@ -23,15 +23,3 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Build Documentation
-      uses: nikeee/docfx-action@v1.0.0
-      with:
-        args: docfx_project/docfx.json
-    - name: Ls
-      run: ls docs
-    - name: Deploy to gh-pages
-      uses: JamesIves/github-pages-deploy-action@v4.3.3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages # The branch the action should deploy to.
-        folder: docs
