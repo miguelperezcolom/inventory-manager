@@ -6,6 +6,10 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>bin\Debug\Domain.xml</DocumentationFile>
+    </PropertyGroup>
+
     <ItemGroup>
       <Folder Include="Aggregates" />
     </ItemGroup>
