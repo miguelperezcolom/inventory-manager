@@ -4,20 +4,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-docs:
-    name: Build Docs
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Build Documentation
-        uses: nikeee/docfx-action@v1.0.0
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
         with:
-          args: docfx_project/docfx.json
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          python-version: 3.x
+      - run: pip install mkdocs-material
+      - run: mkdocs gh-deploy --force
