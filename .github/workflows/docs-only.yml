@@ -37,6 +37,9 @@ jobs:
       - name: Ls
         run: ls docs
 
+      - name: Copy
+        run: cp docs/_site/* docs
+
       - name: Publish
         uses: peaceiris/actions-gh-pages@v3
         with:

@@ -10,10 +10,10 @@ public static class DIExtension
 {
     public static IServiceCollection AddDI(this IServiceCollection services)
     {
-        services.AddScoped<IEventBus, SimpleEventBus>();
-        services.AddScoped<IInventoryRepository, InMemoryInventoryRepository>();
-        services.AddScoped<CommandFactory, CommandFactory>();
-
+        services.AddSingleton<IEventBus, SimpleEventBus>();
+        services.AddSingleton<IInventoryRepository, InMemoryInventoryRepository>();
+        services.AddSingleton<CommandFactory, CommandFactory>();
+        
         return services;
     }
 }
