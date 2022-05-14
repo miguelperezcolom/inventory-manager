@@ -21,18 +21,21 @@ jobs:
         with:
           args: install docfx
 
+      - name: Create Docs dir
+        run: mkdir docs
+
       - name: Pwd
         run: pwd
         
       - name: Ls
         run: ls
 
-      - name: Create Docs dir
-        run: mkdir docs
-        
+      - name: Ls
+        run: ls docfx_project
+
       - name: DocFX Build
         working-directory: docs
-        run: docfx .\docfx_project\docfx.json
+        run: docfx docfx_project/docfx.json
         continue-on-error: false
 
       - name: Publish
