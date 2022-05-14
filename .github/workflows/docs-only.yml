@@ -34,8 +34,7 @@ jobs:
         run: ls docfx_project
 
       - name: DocFX Build
-        working-directory: docs
-        run: docfx docfx_project/docfx.json
+        run: docfx ./docfx_project/docfx.json -o docs
         continue-on-error: false
 
       - name: Publish
