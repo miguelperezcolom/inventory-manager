@@ -37,10 +37,15 @@ jobs:
       - name: Ls
         run: ls docs
 
-      - name: Publish
-        if: github.event_name == 'push'
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Ls
+        run: ls docs/_site
+
+      - name: Ls
+        run: ls docs/api
+
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs
-          force_orphan: true
+          branch: gh-pages # The branch the action should deploy to.
+          folder: docs/_site          
