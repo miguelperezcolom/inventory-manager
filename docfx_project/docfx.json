@@ -26,8 +26,8 @@
     "content": [
       {
         "files": [
-          "api/**.yml",
-          "api/index.md"
+          "docs/api/**.yml",
+          "docs/api/index.md"
         ]
       },
       {
@@ -42,7 +42,7 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "docs/images/**"
         ]
       }
     ],
