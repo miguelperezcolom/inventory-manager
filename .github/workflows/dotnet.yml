@@ -26,7 +26,7 @@ jobs:
     - name: Doxygen
       uses: mattnotmitt/doxygen-action@v1.9.2
     - name: Deploy to gh-pages
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: apidoc
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      with:
+        branch: gh-pages # The branch the action should deploy to.
+        folder: apidoc
