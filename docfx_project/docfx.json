@@ -3,8 +3,10 @@
     {
       "src": [
         {
+          "src": "../",
           "files": [
-            "Domain/**.csproj"
+            "Domain/**.csproj",
+            "Application/**.csproj"
           ]
         }
       ],
