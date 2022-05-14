@@ -23,15 +23,13 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Doxygen
-      uses: mattnotmitt/doxygen-action@v1.9.2
-      
-    - name: Pwd
-      run: pwd
-    - name: Ls
-      run: ls apidoc/html    
+    - name: Build Documentation
+      uses: nikeee/docfx-action@v1.0.0
+      with:
+        args: docfx_project/docfx.json
+
     - name: Deploy to gh-pages
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:
         branch: gh-pages # The branch the action should deploy to.
-        folder: apidoc/html
+        folder: docs
