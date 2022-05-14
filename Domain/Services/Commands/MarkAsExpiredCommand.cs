@@ -5,12 +5,12 @@ namespace Domain.Services.Commands;
 
 public class MarkAsExpiredCommand
 {
-    private InventoryRepository _inventoryRepository;
-    private IEventBus _eventBus;
+    private readonly IInventoryRepository _inventoryRepository;
+    private readonly IEventBus _eventBus;
     
-    private DateOnly _date;
+    private readonly DateOnly _date;
 
-    public MarkAsExpiredCommand(InventoryRepository inventoryRepository, IEventBus eventBus, DateOnly date)
+    public MarkAsExpiredCommand(IInventoryRepository inventoryRepository, IEventBus eventBus, DateOnly date)
     {
         _inventoryRepository = inventoryRepository;
         _eventBus = eventBus;

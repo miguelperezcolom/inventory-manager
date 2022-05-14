@@ -1,18 +1,19 @@
 using Domain.InventoryAggregate;
+using Domain.InventoryAggregate.Entities;
 
 namespace Domain.Services.Commands;
 
 public class AddItemCommand
 {
-    private InventoryRepository _inventoryRepository;
+    private readonly IInventoryRepository _inventoryRepository;
     
-    private string _name;
+    private readonly string _name;
 
-    private DateOnly _expirationDate;
+    private readonly DateOnly _expirationDate;
 
-    private ItemType _type;
+    private readonly ItemType _type;
 
-    public AddItemCommand(InventoryRepository inventoryRepository, string name, DateOnly expirationDate, ItemType type)
+    public AddItemCommand(IInventoryRepository inventoryRepository, string name, DateOnly expirationDate, ItemType type)
     {
         _inventoryRepository = inventoryRepository;
         _name = name;

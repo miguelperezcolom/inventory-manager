@@ -4,7 +4,7 @@ namespace Application.Mappers;
 
 public static class Mapper
 {
-    public static Item MapToModel(Domain.InventoryAggregate.Item item)
+    public static Item MapToModel(Domain.InventoryAggregate.Entities.Item item)
     {
         return new Item()
         {
@@ -14,13 +14,9 @@ public static class Mapper
         };
     }
     
-    public static IList<Item> MapToModel(IList<Domain.InventoryAggregate.Item> items)
+    public static IList<Item> MapToModel(IList<Domain.InventoryAggregate.Entities.Item> items)
     {
         return items.Select(item => MapToModel(item)).ToList();
-    }
-    public static Domain.InventoryAggregate.Item MapToDomain(Item item)
-    {
-        return new Domain.InventoryAggregate.Item(item.Name, item.ExpirationDate, item.Type);
     }
 
 }

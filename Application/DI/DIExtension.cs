@@ -11,7 +11,7 @@ public static class DIExtension
     public static IServiceCollection AddDI(this IServiceCollection services)
     {
         services.AddScoped<IEventBus, SimpleEventBus>();
-        services.AddScoped<InventoryRepository, InMemoryInventoryRepository>();
+        services.AddScoped<IInventoryRepository, InMemoryInventoryRepository>();
         services.AddScoped<CommandFactory, CommandFactory>();
 
         return services;

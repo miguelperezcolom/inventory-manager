@@ -5,12 +5,12 @@ namespace Domain.Services.Commands;
 
 public class RemoveItemCommand
 {
-    private InventoryRepository _inventoryRepository;
-    private IEventBus _eventBus;
+    private readonly IInventoryRepository _inventoryRepository;
+    private readonly IEventBus _eventBus;
 
-    private string _name;
+    private readonly string _name;
 
-    public RemoveItemCommand(InventoryRepository inventoryRepository, IEventBus eventBus, string name)
+    public RemoveItemCommand(IInventoryRepository inventoryRepository, IEventBus eventBus, string name)
     {
         _inventoryRepository = inventoryRepository;
         _name = name;

@@ -1,13 +1,14 @@
 using Domain.InventoryAggregate;
+using Domain.InventoryAggregate.Entities;
 
 namespace Domain.Services.Queries;
 
 public class GetItemQuery
 {
-    private InventoryRepository _inventoryRepository;
+    private readonly IInventoryRepository _inventoryRepository;
     private readonly string _name;
 
-    public GetItemQuery(InventoryRepository inventoryRepository, string name)
+    public GetItemQuery(IInventoryRepository inventoryRepository, string name)
     {
         _inventoryRepository = inventoryRepository;
         _name = name;
