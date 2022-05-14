@@ -25,5 +25,3 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Doxygen
       uses: mattnotmitt/doxygen-action@v1.9.2
-      with:
-        additional-packages: font-fira-code      
