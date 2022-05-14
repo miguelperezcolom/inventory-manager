@@ -38,7 +38,7 @@ jobs:
         run: ls docs
 
       - name: Ls
-          run: ls docs/api
+        run: ls docs/api
 
       - name: Copy
         run: cp -R docs/_site/* docs
