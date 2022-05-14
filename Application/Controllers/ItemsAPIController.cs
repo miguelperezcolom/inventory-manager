@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.Net;
 using Application.Mappers;
 using Application.Model;
@@ -40,7 +41,9 @@ public class ItemsAPIController : ControllerBase
     
     [HttpGet]
     [Route("{itemId}")]
-    public async Task<ActionResult<Item>> GetItem([FromRoute] string itemId)
+    public async Task<ActionResult<Item>> GetItem(
+        [Required(AllowEmptyStrings = false)]
+        [FromRoute] string itemId)
     {
         var command = _commandFactory.CreateGetItemQuery(itemId);
         var item = await command.RunAsync();

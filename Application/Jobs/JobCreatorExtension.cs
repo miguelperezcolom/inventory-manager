@@ -21,7 +21,7 @@ public static class JobCreatorExtension
         return app;
     }
 
-    private static void ExpireItems(CommandFactory commandFactory)
+    public static void ExpireItems(CommandFactory commandFactory)
     {
         var command = commandFactory.CreateMarkAsExpiredCommand(DateOnly.FromDateTime(DateTime.Now));
         //todo: use dispatcher
