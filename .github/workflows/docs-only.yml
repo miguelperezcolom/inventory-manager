@@ -4,12 +4,20 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  build-docs:
+    name: Build Docs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build Documentation
+        uses: nikeee/docfx-action@v1.0.0
         with:
-          python-version: 3.x
-      - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force
+          args: docfx_project/docfx.json
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages # The branch the action should deploy to.
+          folder: docs
