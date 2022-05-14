@@ -10,12 +10,13 @@ public class Inventory
         _items = items;
     }
 
-    public void AddItem(string name, DateOnly expirationDate, ItemType type)
+    public Item AddItem(string name, DateOnly expirationDate, ItemType type)
     {
         if (_items.Where(i => i.Name.Equals(name)).Any()) 
             throw new Exception("Already exists");
-        
-        _items.Add(new Item(name, expirationDate, type));
+        var item = new Item(name, expirationDate, type);
+        _items.Add(item);
+        return item;
     }
 
     public void RemoveItem(string name)

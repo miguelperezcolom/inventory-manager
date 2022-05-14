@@ -1,4 +1,7 @@
+using System.Net;
+using Application.Mappers;
 using Application.Model;
+using Domain.Services.Factories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Application.Controllers;
@@ -8,25 +11,49 @@ namespace Application.Controllers;
 public class ItemsAPIController : ControllerBase
 {
     private readonly ILogger<ItemsAPIController> _logger;
+    private readonly CommandFactory _commandFactory;
 
-    public ItemsAPIController(ILogger<ItemsAPIController> logger)
+
+    public ItemsAPIController(ILogger<ItemsAPIController> logger, CommandFactory commandFactory)
     {
         _logger = logger;
+        _commandFactory = commandFactory;
     }
 
     [HttpPost]
-    public void Add(Item item)
+    public async Task<ActionResult<Item>> Add(Item item)
     {
+        var command = _commandFactory.CreateAddItemCommand(item.Name, item.ExpirationDate, item.Type);
+        var itemCreated = await command.RunAsync();
+        var result = Mapper.MapToModel(itemCreated);      
+        return Ok(result);
     }
     
     [HttpGet]
-    public Item Get()
+    public async Task<ActionResult<IList<Item>>> GetAll()
     {
-        return new Item();
+        var command = _commandFactory.CreateGetItemsQuery();
+        var items = await command.RunAsync();
+        var result = Mapper.MapToModel(items);      
+        return Ok(result);
+     }
+    
+    [HttpGet]
+    [Route("{itemId}")]
+    public async Task<ActionResult<Item>> GetItem([FromRoute] string itemId)
+    {
+        var command = _commandFactory.CreateGetItemQuery(itemId);
+        var item = await command.RunAsync();
+        if (item == null) return NotFound();
+        var result = Mapper.MapToModel(item);      
+        return Ok(result);
     }
     
     [HttpDelete]
-    public void Delete(Item item)
+    public async Task<ActionResult> Delete(Item item)
     {
+        var command = _commandFactory.CreateRemoveItemCommand(item.Name);
+        await command.RunAsync();
+        return NoContent();
     }
 }

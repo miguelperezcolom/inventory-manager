@@ -20,10 +20,11 @@ public class AddItemCommand
         _type = type;
     }
 
-    public async Task RunAsync()
+    public async Task<Item> RunAsync()
     {
         var inventory = _inventoryRepository.Load();
-        inventory.AddItem(_name, _expirationDate, _type);
+        var item = inventory.AddItem(_name, _expirationDate, _type);
         _inventoryRepository.Save(inventory);
+        return item;
     }
 }

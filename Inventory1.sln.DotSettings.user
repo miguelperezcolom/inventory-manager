@@ -4,5 +4,9 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=04b311b7_002D6a10_002D4a4a_002Da433_002D66d0afe0a1fc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="repo_add_item_item_added" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::97189EAC-2B2D-48C4-BEA4-433D4F66E4B0::net6.0::Tests.UnitTest1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::97189EAC-2B2D-48C4-BEA4-433D4F66E4B0::net6.0::Tests.Application.ApiTests.api_post_item_created&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::97189EAC-2B2D-48C4-BEA4-433D4F66E4B0::net6.0::Tests.Application.ApiTests.api_get_item_returned&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::97189EAC-2B2D-48C4-BEA4-433D4F66E4B0::net6.0::Tests.Application.ApiTests.api_get_items_returned&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::97189EAC-2B2D-48C4-BEA4-433D4F66E4B0::net6.0::Tests.Application.ApiTests.api_delete_item_removed&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
