@@ -1,17 +1,24 @@
 {
   "metadata": [
     {
-      "src": [
-        {
-          "src": "../",
-          "files": [
-            "Domain/**.csproj"
-          ]
-        }
-      ],
+      "src": {
+        "files": [
+          "**/*.csproj"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/bin/**",
+          "_site/**",
+          "vendor/**"
+        ],
+        "src": ".."
+      },
       "dest": "api",
       "disableGitFeatures": false,
-      "disableDefaultFilter": false
+      "disableDefaultFilter": false,
+      "properties": {
+        "TargetFramework": "net6.0"
+      }
     }
   ],
   "build": {
