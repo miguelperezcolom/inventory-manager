@@ -1,5 +1,5 @@
 <template>
-  <h3 class="title">Add items form</h3>
+  <h3 class="title">Add item form</h3>
   <div class="columns px-3">
     <div class="field is-one-quarter">
       <label class="label" for="name">Name</label>

@@ -1,5 +1,5 @@
 <template>
-  <h3 class="title">Items list</h3>
+  <h3 class="title">Inventory</h3>
   <table class="table is-striped is-fullwidth">
     <thead>
       <tr>
