@@ -8,7 +8,7 @@ public class ItemValidator : AbstractValidator<Item>
     public ItemValidator()
     {
         RuleFor(i => i.Name).NotEmpty();
-        RuleFor(i => i.ExpirationDate).NotNull();
-        RuleFor(i => i.Type).NotNull();
+        RuleFor(i => i.ExpirationDate).NotEmpty();
+        RuleFor(i => i.Type).NotEmpty();
     }
 }

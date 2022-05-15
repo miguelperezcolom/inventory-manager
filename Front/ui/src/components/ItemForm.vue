@@ -1,13 +1,38 @@
 <template>
-  <div>
-    <input type="text" id="name" v-model="item.name" />
-    <select id="type" v-model="item.type">
-      <option value="Basic">Basic</option>
-      <option value="Box">Box</option>
-      <option value="Document">Document</option>
-    </select>
-    <input type="date" id="expirationDate" v-model="item.expirationDate" />
-    <button @click="add">Add</button>
+  <h3 class="title">Add items form</h3>
+  <div class="columns px-3">
+    <div class="field is-one-quarter">
+      <label class="label" for="name">Name</label>
+      <input class="input" type="text" id="name" v-model="item.name" />
+    </div>
+    <div class="field is-one-quarter ml-2">
+      <label class="label" for="type">Type</label>
+      <div class="select">
+        <select id="type" v-model="item.type">
+          <option value="Basic">Basic</option>
+          <option value="Box">Box</option>
+          <option value="Document">Document</option>
+        </select>
+      </div>
+    </div>
+    <div class="field is-one-quarter ml-2">
+      <label class="label" for="expirationDate">Exp. date</label>
+      <input
+        class="input"
+        type="date"
+        id="expirationDate"
+        v-model="item.expirationDate"
+      />
+    </div>
+    <div class="field is-one-quarter ml-2">
+      <label class="label" for="button">&nbsp;</label>
+      <button class="button is-one-quarter is-primary" id="button" @click="add">
+        <span>Add</span>
+        <span class="icon is-small">
+          <i class="fas fa-plus"></i>
+        </span>
+      </button>
+    </div>
   </div>
 </template>
 

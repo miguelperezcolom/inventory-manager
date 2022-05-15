@@ -1,5 +1,6 @@
 <template>
-  <table>
+  <h3 class="title">Items list</h3>
+  <table class="table is-striped is-fullwidth">
     <thead>
       <tr>
         <th>Name</th>
@@ -13,7 +14,14 @@
         <td>{{ item.name }}</td>
         <td>{{ item.type }}</td>
         <td>{{ item.expirationDate }}</td>
-        <td><button @click="remove(item)">Remove</button></td>
+        <td>
+          <button class="button is-danger" @click="remove(item)">
+            <span>Remove</span>
+            <span class="icon is-small">
+              <i class="fas fa-times"></i>
+            </span>
+          </button>
+        </td>
       </tr>
     </tbody>
   </table>

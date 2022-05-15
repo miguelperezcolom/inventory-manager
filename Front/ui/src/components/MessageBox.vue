@@ -1,7 +1,7 @@
 <template>
-  <div :style="style">
+  <div :style="style" class="notification is-danger">
     <div>{{ props.message }}</div>
-    <button @click="hide">Close</button>
+    <button class="delete" aria-label="delete" @click="hide"></button>
   </div>
 </template>
 
