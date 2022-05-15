@@ -24,7 +24,7 @@ public class ItemsAPIController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Item>> Add(Item item)
     {
-        var command = _commandFactory.CreateAddItemCommand(item.Name, item.ExpirationDate, item.Type);
+        var command = _commandFactory.CreateAddItemCommand(item.Name, DateOnly.Parse(item.ExpirationDate), item.Type);
         var itemCreated = await command.RunAsync();
         var result = Mapper.MapToModel(itemCreated);      
         return Ok(result);

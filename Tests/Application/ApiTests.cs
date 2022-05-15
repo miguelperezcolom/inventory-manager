@@ -28,7 +28,7 @@ public class ApiTests
         var item = new Item()
         {
             Name = "test",
-            ExpirationDate = new DateOnly(2022, 05, 14),
+            ExpirationDate = "2022-05-14",
             Type = ItemType.Box
         };
 
@@ -54,14 +54,14 @@ public class ApiTests
         var item1 = new Item()
         {
             Name = "test1",
-            ExpirationDate = new DateOnly(2022, 05, 14),
+            ExpirationDate = "2022-05-14",
             Type = ItemType.Box
         };
         await controller.Add(item1);
         var item2 = new Item()
         {
             Name = "test2",
-            ExpirationDate = new DateOnly(2022, 05, 15),
+            ExpirationDate = "2022-05-14",
             Type = ItemType.Document
         };
         await controller.Add(item2);
@@ -92,7 +92,7 @@ public class ApiTests
         var item = new Item()
         {
             Name = "test",
-            ExpirationDate = new DateOnly(2022, 05, 14),
+            ExpirationDate = "2022-05-14",
             Type = ItemType.Box
         };
         await controller.Add(item);
@@ -119,7 +119,7 @@ public class ApiTests
         var item = new Item()
         {
             Name = "test",
-            ExpirationDate = new DateOnly(2022, 05, 14),
+            ExpirationDate = "2022-05-14",
             Type = ItemType.Box
         };
         await controller.Add(item);
