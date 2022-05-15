@@ -21,6 +21,7 @@ builder.Services.AddDI();
 builder.Services.AddCors();
 builder.Services.AddAuthentication("BasicAuthentication")
     .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
+builder.Services.AddAuthorization();
 
 builder.Services.AddControllers()
     .AddFluentValidation();
@@ -52,6 +53,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

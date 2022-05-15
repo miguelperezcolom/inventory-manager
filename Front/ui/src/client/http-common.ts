@@ -4,5 +4,9 @@ const apiClient: AxiosInstance = axios.create({
   headers: {
     "Content-type": "application/json",
   },
+  auth: {
+    username: "admin",
+    password: "admin",
+  },
 });
 export default apiClient;
