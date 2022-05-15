@@ -10,7 +10,7 @@ public static class Mapper
         {
             Name = item.Name,
             ExpirationDate = item.ExpirationDate.ToString("yyyy-MM-dd"),
-            Type = item.Type
+            Type = item.Type.ToString()
         };
     }
     

@@ -2,12 +2,16 @@ using System.ComponentModel.DataAnnotations;
 using System.Net;
 using Application.Mappers;
 using Application.Model;
+using Domain.Exceptions;
+using Domain.InventoryAggregate;
 using Domain.Services.Factories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Application.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("api/v1/items")]
 public class ItemsAPIController : ControllerBase
 {
@@ -24,10 +28,17 @@ public class ItemsAPIController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Item>> Add(Item item)
     {
-        var command = _commandFactory.CreateAddItemCommand(item.Name, DateOnly.Parse(item.ExpirationDate), item.Type);
-        var itemCreated = await command.RunAsync();
-        var result = Mapper.MapToModel(itemCreated);      
-        return Ok(result);
+        try
+        {
+            var command = _commandFactory.CreateAddItemCommand(item.Name, DateOnly.Parse(item.ExpirationDate), Enum.Parse<ItemType>(item.Type));
+            var itemCreated = await command.RunAsync();
+            var result = Mapper.MapToModel(itemCreated);      
+            return Ok(result);
+        }
+        catch (Exception exception)
+        {
+            return BadRequest(exception.Message);
+        }
     }
     
     [HttpGet]

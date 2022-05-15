@@ -1,0 +1,39 @@
+
+###
+POST https://localhost:7098/api/v1/items
+accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Item 1",
+  "expirationDate": "2022-06-12",
+  "type": "Document"
+}
+
+###
+POST https://localhost:7098/api/v1/items
+accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Item 2",
+  "expirationDate": "2022-06-13",
+  "type": "Box"
+}
+
+###
+DELETE https://localhost:7098/api/v1/items
+accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Item 1",
+  "expirationDate": "2020-01-01",
+  "type": "Item"
+}
+
+
+###
+GET https://localhost:7098/api/v1/items
+Accept: application/json
+

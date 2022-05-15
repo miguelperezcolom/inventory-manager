@@ -8,6 +8,6 @@ public class Item
     
     public string ExpirationDate { get; set; }
 
-    public ItemType Type { get; set; }
+    public string Type { get; set; }
 
 }

@@ -29,7 +29,7 @@ public class ApiTests
         {
             Name = "test",
             ExpirationDate = "2022-05-14",
-            Type = ItemType.Box
+            Type = ItemType.Box.ToString()
         };
 
         // when
@@ -55,14 +55,14 @@ public class ApiTests
         {
             Name = "test1",
             ExpirationDate = "2022-05-14",
-            Type = ItemType.Box
+            Type = ItemType.Box.ToString()
         };
         await controller.Add(item1);
         var item2 = new Item()
         {
             Name = "test2",
             ExpirationDate = "2022-05-14",
-            Type = ItemType.Document
+            Type = ItemType.Document.ToString()
         };
         await controller.Add(item2);
         var items = new List<Item>()
@@ -93,7 +93,7 @@ public class ApiTests
         {
             Name = "test",
             ExpirationDate = "2022-05-14",
-            Type = ItemType.Box
+            Type = ItemType.Box.ToString()
         };
         await controller.Add(item);
 
@@ -120,7 +120,7 @@ public class ApiTests
         {
             Name = "test",
             ExpirationDate = "2022-05-14",
-            Type = ItemType.Box
+            Type = ItemType.Box.ToString()
         };
         await controller.Add(item);
 
