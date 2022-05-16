@@ -71,7 +71,7 @@ You will then be able to navigate to http://localhost:8080 and see the UI.
 
 ## Leftovers
 
-As said, this has been timeboxed, and some leftovers are pending. As far as I remember, they are:
+As said, this has been time boxed, and some leftovers are pending. As far as I remember, they are:
 
 - some tests. Even though I have included some, there are some tests left
 - this solution is not designed to allow concurrency
