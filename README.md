@@ -1,10 +1,11 @@
+
 #Inventory Manager Code Challenge
 
 ## Overview
 
 This project contains a basic implementation of an inventory manager.
 This has been a time boxed project, trying to fulfill as many points of the 
-code challenge as possible during approximately 1 work day.
+code challenge as possible during the weekend.
 
 ## Business requisites
 
@@ -46,7 +47,7 @@ The Back side exposes a Rest API and has been developed with .Net, and has 4 pro
 The projects follow the typical domain-centered architecture, where the Domain
 is the core component.
 
-The Front side contains a UI and has been developed using Vue 3.
+The Front side contains a UI and has been developed using Vue 3 and typescript.
 
 ## Run it
 
@@ -80,14 +81,15 @@ As said, this has been timeboxed, and some leftovers are pending. As far as I re
 - comments on many classes
 - technical documentation, from /// comments
 - e2e tests
-- the UI is quite simple (e.g. I'm not using vuex)
-- create docker images and helm charts, so the solution can easily be run in a kubernetes cluster
+- the UI is quite simple (e.g. I'm not using vuex, nor I have developed any test)
+- create helm chart, so the solution can be easily run in a kubernetes cluster
 
 Also, there are some things which I would change:
 
 - there is some logic in the code related to items expiration which should be splitted
 - I would take the authentication code out of the project, and move that responsibility to an api gateway
 - I would also take the job triggers out of the project, and use the kubernetes jobs for that
+
 
 ## Conclusion
 
