@@ -1,5 +1,4 @@
-
-#Inventory Manager Code Challenge
+# Inventory Manager Code Challenge
 
 ## Overview
 
