@@ -69,7 +69,7 @@ You will then be able to navigate to http://localhost:8080 and see the UI.
 
 <img src="https://raw.githubusercontent.com/miguelperezcolom/inventory-manager/master/docs/s02.png" width="600">
 
-## Leftovers
+## Pending
 
 As said, this has been time boxed, and some points are pending. As far as I remember, they are:
 
