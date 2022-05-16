@@ -81,6 +81,7 @@ As said, this has been time boxed, and some points are pending. As far as I reme
 - technical documentation, from /// comments
 - e2e tests
 - the UI is quite simple (e.g. I'm not using vuex, nor I have developed any test)
+- better error handling
 - create helm chart, so the solution can be easily run in a kubernetes cluster
 - clean up
 
