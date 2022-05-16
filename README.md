@@ -56,6 +56,8 @@ To run the Back side, just issue:
 
 you can check the api is running by navigating to http://localhost:7098/swagger/index.html
 
+<img src="https://raw.githubusercontent.com/miguelperezcolom/inventory-manager/master/docs/s01.png" width="600">
+
 user: `admin`
 password: `admin`
 
@@ -64,6 +66,8 @@ To run the Front side, just move to the `ui` directory and issue:
 `docker run -p 8080:80 miguelperezcolom/inventory-front:v1`
 
 You will then be able to navigate to http://localhost:8080 and see the UI.
+
+<img src="https://raw.githubusercontent.com/miguelperezcolom/inventory-manager/master/docs/s02.png" width="600">
 
 ## Leftovers
 
