@@ -2,6 +2,7 @@ using Application.DI;
 using Application.Jobs;
 using Application.Model;
 using Application.Validators;
+using Auth;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Hangfire;
@@ -40,7 +41,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
     app.UseSwagger();
     app.UseSwaggerUI();

@@ -21,9 +21,9 @@ public class ApiTests
     public async Task api_post_item_created()
     {
         // given
-        var mock = new Mock<ILogger<ItemsAPIController>>();
-        ILogger<ItemsAPIController> logger = mock.Object;
-        var controller = new ItemsAPIController(logger, new CommandFactory(
+        var mock = new Mock<ILogger<ItemsApiController>>();
+        ILogger<ItemsApiController> logger = mock.Object;
+        var controller = new ItemsApiController(logger, new CommandFactory(
             new InMemoryInventoryRepository(), new SimpleEventBus()));
         var item = new Item()
         {
@@ -47,9 +47,9 @@ public class ApiTests
     public async Task api_get_items_returned()
     {
         // given
-        var mock = new Mock<ILogger<ItemsAPIController>>();
-        ILogger<ItemsAPIController> logger = mock.Object;
-        var controller = new ItemsAPIController(logger, new CommandFactory(
+        var mock = new Mock<ILogger<ItemsApiController>>();
+        ILogger<ItemsApiController> logger = mock.Object;
+        var controller = new ItemsApiController(logger, new CommandFactory(
             new InMemoryInventoryRepository(), new SimpleEventBus()));
         var item1 = new Item()
         {
@@ -85,9 +85,9 @@ public class ApiTests
     public async Task api_get_item_returned()
     {
         // given
-        var mock = new Mock<ILogger<ItemsAPIController>>();
-        ILogger<ItemsAPIController> logger = mock.Object;
-        var controller = new ItemsAPIController(logger, new CommandFactory(
+        var mock = new Mock<ILogger<ItemsApiController>>();
+        ILogger<ItemsApiController> logger = mock.Object;
+        var controller = new ItemsApiController(logger, new CommandFactory(
             new InMemoryInventoryRepository(), new SimpleEventBus()));
         var item = new Item()
         {
@@ -112,9 +112,9 @@ public class ApiTests
     public async Task api_delete_item_removed()
     {
         // given
-        var mock = new Mock<ILogger<ItemsAPIController>>();
-        ILogger<ItemsAPIController> logger = mock.Object;
-        var controller = new ItemsAPIController(logger, new CommandFactory(
+        var mock = new Mock<ILogger<ItemsApiController>>();
+        ILogger<ItemsApiController> logger = mock.Object;
+        var controller = new ItemsApiController(logger, new CommandFactory(
             new InMemoryInventoryRepository(), new SimpleEventBus()));
         var item = new Item()
         {

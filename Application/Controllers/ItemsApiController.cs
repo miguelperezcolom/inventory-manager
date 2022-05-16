@@ -13,13 +13,13 @@ namespace Application.Controllers;
 [ApiController]
 [Authorize]
 [Route("api/v1/items")]
-public class ItemsAPIController : ControllerBase
+public class ItemsApiController : ControllerBase
 {
-    private readonly ILogger<ItemsAPIController> _logger;
+    private readonly ILogger<ItemsApiController> _logger;
     private readonly CommandFactory _commandFactory;
 
 
-    public ItemsAPIController(ILogger<ItemsAPIController> logger, CommandFactory commandFactory)
+    public ItemsApiController(ILogger<ItemsApiController> logger, CommandFactory commandFactory)
     {
         _logger = logger;
         _commandFactory = commandFactory;
@@ -28,6 +28,7 @@ public class ItemsAPIController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Item>> Add(Item item)
     {
+        _logger.LogInformation($"Add({item})");
         try
         {
             var command = _commandFactory.CreateAddItemCommand(item.Name, DateOnly.Parse(item.ExpirationDate), Enum.Parse<ItemType>(item.Type));
@@ -44,6 +45,7 @@ public class ItemsAPIController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IList<Item>>> GetAll()
     {
+        _logger.LogInformation($"GetAll()");
         var command = _commandFactory.CreateGetItemsQuery();
         var items = await command.RunAsync();
         var result = Mapper.MapToModel(items);      
@@ -56,6 +58,7 @@ public class ItemsAPIController : ControllerBase
         [Required(AllowEmptyStrings = false)]
         [FromRoute] string itemId)
     {
+        _logger.LogInformation($"GetItem({itemId})");
         var command = _commandFactory.CreateGetItemQuery(itemId);
         var item = await command.RunAsync();
         if (item == null) return NotFound();
@@ -66,6 +69,7 @@ public class ItemsAPIController : ControllerBase
     [HttpDelete]
     public async Task<ActionResult> Delete(Item item)
     {
+        _logger.LogInformation($"Delete({item})");
         var command = _commandFactory.CreateRemoveItemCommand(item.Name);
         await command.RunAsync();
         return NoContent();

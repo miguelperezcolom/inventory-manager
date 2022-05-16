@@ -21,7 +21,7 @@ public class MarkAsExpiredCommand
     {
         var inventory = _inventoryRepository.Load();
         var expiredItems = inventory.MarkAsExpired(_date);
-        //todo: separar en query y command
+        //todo: separate in query and command
         foreach (var expiredItem in expiredItems)
         {
             _eventBus.Publish(new ItemExpired(expiredItem.Name));            

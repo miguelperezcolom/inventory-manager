@@ -25,7 +25,7 @@ public class UnitTest1
         //then
         var items = repo.Load().GetItems();
         Assert.NotEmpty(items.Where(item => item.Name.Equals(name)));
-        var item = items.Where(item => item.Name.Equals(name)).First();
+        var item = items.First(item => item.Name.Equals(name));
         Assert.Equal(name, item.Name);
         Assert.Equal(expDate, item.ExpirationDate);
         Assert.Equal(type, item.Type);
