@@ -9,7 +9,7 @@ code challenge as possible during the weekend.
 ## Business requisites
 
 The starting point of any project are (or should be) the business requisites. I have 
-guessed that, after several talks with the business guys, we have agreed
+assumed that, after several talks with the business guys, we have agreed
 the following requisites:
 
 - Item's name must be unique (there are not 2 items with the same name in the inventory)
@@ -82,6 +82,7 @@ As said, this has been timeboxed, and some leftovers are pending. As far as I re
 - e2e tests
 - the UI is quite simple (e.g. I'm not using vuex, nor I have developed any test)
 - create helm chart, so the solution can be easily run in a kubernetes cluster
+- clean up
 
 Also, there are some things which I would change:
 
