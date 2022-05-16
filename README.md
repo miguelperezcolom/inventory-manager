@@ -52,24 +52,16 @@ The Front side contains a UI and has been developed using Vue 3.
 
 To run the Back side, just issue:
 
-`dotnet build`
+`docker run -p 7098:80 miguelperezcolom/inventory-back:v1`
 
-and
-
-`dotnet run --project Application` 
-
-you can check the api is running by navigating to https://localhost:7098/api/v1/items
+you can check the api is running by navigating to http://localhost:7098/swagger/index.html
 
 user: `admin`
 password: `admin`
 
 To run the Front side, just move to the `ui` directory and issue:
 
-`cd .\Front\ui`
-
-`npm install`
-
-`npm run serve`
+`docker run -p 8080:80 miguelperezcolom/inventory-front:v1`
 
 You will then be able to navigate to http://localhost:8080 and see the UI.
 
