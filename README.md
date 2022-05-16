@@ -61,7 +61,7 @@ you can check the api is running by navigating to http://localhost:7098/swagger/
 user: `admin`
 password: `admin`
 
-To run the Front side, just move to the `ui` directory and issue:
+To run the Front side, just issue:
 
 `docker run -p 8080:80 miguelperezcolom/inventory-front:v1`
 
